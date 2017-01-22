@@ -1,74 +1,203 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
+
+
+
+
+
 <body>
 
 <header>
-  <img src="" alt=""> </img>
 
+    <!--insite navigation-->
+    <nav>
+        <a href="index-comigo.html"> <img src="logo.png" alt="logo of comigo">  </a>
 
-  <!--insite navigation-->
-  <nav>
+        <ul class="nav-links">
+            <li><a href="">home</a></li>
+            <li class="top-menu"><a href="">our solutions</a></li>  <!-- needs a :hover maybe-->
+            <ul class="sub-menu">               <!--first sub menu-->
+                <li class="middle-menue"><a href="">el cloud</a></li>
+                <ul class="sub-sub-menue">
+                    <li><a href="">el<span class="upper-class-font">x</span> </a></li>
+                    <li><a href="">ei mind </a></li>
+                </ul>
+                <li class="middle-menue"><a href="">el middleware </a></li>   <!--second sub menu-->
+                <ul class="sub-sub-menue">
+                    <li><a href="">android</a></li>
+                    <li><a href="">comico whatchapp<span class="upper-class-font">tm</span> applications </a></li>
+                </ul>
+                <li><a href="">android stb </a></li>
+            </ul>
+            <li><a href="">partners</a></li>
+            <li class="top-menue"><a href="">industry inshights</a></li>
+            <ul class="sub-menu">
+                <li><a href="">el cloud</a></li>
+                <li><a href="">el middleware </a></li>
+                <li><a href="">android stb </a></li>
+            </ul>
+            <li><a href="">about</a></li>
+            <li><a href="">contact</a></li>
+        </ul>
 
-  </nav>
+    </nav>
 </header>
 
 
-<main>
+<main class="main-comtent">
 
-  <!--welcoming imag-->
-
-  <div id="welcoming img"> <!--since it's only Css that wrapes it-->
-    <h1></h1>
-    <p></p>
-    <a href=""></a>
-  </div>
+    <article>  <!--all "WHY COMICO" references-->
 
 
-  <article>  <!--all "WHY COMICO" references-->
+        <!--welcoming imag-->
 
-    <h3></h3>
-    <h2></h2>
-    <a href=""></a>
-
-    <section>  <!--general overview-->
-      <h2></h2>
-      <p></p>
-      dl>td*6 <!--with <p> & background (img)-->
-
-    </section>
-
-    <section></section>  <!--enhance TV servece explnation-->
-    <section></section> <!--deploy on android-->
-    <section></section> <!--WatchApp application on comigo-->
+        <header id="welcoming img">
+            <h1>comifo OTT/STB solution - redfine TV experience</h1>
+            <p>Experience Intelligence</p>
+            <a id=" button-link" href=""></a>    <!-- No ID ceause i can do class <header> a {} -->
+        </header>
 
 
-    <!--Joining info-->
-
-    <section>
-      <h3></h3> <!--title-->
-      <button></button> <!--download brochure-->
-      <a href=""></a> <!--Demo link-->
-      <a href=""></a> <!--meeting link-->
-      <div>ul>li{<!--img-->}*4 <!--social media link--><div>
-
-    </section>
+        <div class="with-stip slim">
+            <h5>why comico?</h5>
+            <h2>Comigo redefines the TV experience, infusing it with the full power of the Internet</h2>
+            <!--H2 cause it's importent the search engine will maybe display this info-->
+            <a id=" button-link" href="">contact us</a>
+        </div>
 
 
-    <!--the blog -->
-    <aside>
-      <h3></h3>
-      <p></p>
-      ul>li{<!--<artical> - of each blog -->}*5  <!--list of blogs-->
-    </aside>
+        <section class="background-strip">  <!--general overview-->
 
-  </article>
+            <video width="100%" height="40px" autoplay loop>
+                <source src="" type="video/mp4">
+                <source src="" type="video/ogg">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <h2>engage viewers, differenttiate expence and drive new revenue</h2>
+            <p>with highly-relevant contextual services</p>
+
+            <dl>
+                <td>pedia</td>
+                <dd id="pedia">Drive stickiness by enriching content with contextual data from external sources</dd>
+                <!--id for backgrpund img-->
+
+                <td>participation</td>
+                <dd id="participation">Engage viewers and increase content spread through data-driven social features
+                </dd>
+
+                <td>discovery</td>
+                <dd id="discovery">Offer personalised content with contextualised search, menu and recommendations</dd>
+
+                <td>commerce</td>
+                <dd id="discovery">Create new revenue engines through
+                    contextual shopping services
+                </dd>
+
+                <td>advertising</td>
+                <dd id="advertising">Offer ultra-targeted measurable advertising with advanced campaign analytics</dd>
+
+                <td>customize</td>
+                <dd id="customize">Quickly launch new, unique services
+                    based on our open SDK
+                </dd>
+
+            </dl>
+
+        </section> <!--enhance TV servece explnation-->
+
+        <section class="half-strip inhance">
+            <h2> ENHANCE ANY TV SERVICE</h2>
+            <p>Comigo Experience Intelligence (EI)</p>
+            <a id=" button-link negative" href="">enhance your OTT TV</a>
+
+        </section>
+
+        <section class="half-strip delpoy"> <!--deploy on android-->
+            <h2> DEPLOY BEST IN CLASS TV SERVICE</h2>
+            <p>Comigo's Android-based STB (HW&MW)</p>
+            <a id=" button-link" href="">deploy on android</a>
+        </section>
+
+
+        <section class="with-stip slim">  <!--WatchApp application on comigo-->
+            <h5>YOUR CONTENT, COMIGO’S UNIQUE EXPERIENCE</h5>
+            <p>ntelligence-based contextual WatchApp™ Applications.</p>
+            <a id=" button-link" href="">deploy on android</a>
+
+        </section>
+
+
+        <!--Joining info-->
+
+        <section class="with-stip big">
+            <h3>LEARN MORE ABOUT COMIGO</h3> <!--title-->
+            <button id="download-button">download our brochure to learn more</button> <!--download brochure-->
+            <!-- <a href="file.pdf"></a>   -- another option to download-->
+            <a id="demo" href="">schedual a demo</a> <!--Demo link-->
+            <a id="meeting" href="">scedual a meeting at ibc 2016</a> <!--meeting link-->
+
+
+            <ul class="social-media html-links">
+                <li><a href=""> <img src="" alt="Facebook"></a></li>
+                <li><a href=""> <img src="" alt="Twitter"></a></li>
+                <li><a href=""> <img src="" alt="linkdin"></a></li>
+                <li><a href=""> <img src="" alt="youyube"></a></li>
+            </ul> <!--social media link-->
+
+
+        </section>
+
+
+        <!--the blog -->
+        <aside class="blog-strip">
+            <h3>our blog</h3>
+            <p>the inside view</p>
+            <ul>    <!--list of blogs-->
+                <li id="blog1">  <!-- i think this should be an artical - but this is JS-->
+                    <a hfre="">
+                        <p>Comigo’s Experience Intelligence Products Redefine TV – And You Can Find Out How at
+                            IBC2016</p>
+                        <p>read more</p>
+                    </a>
+                </li>
+                <li id="blog2">
+                    <a hfre="">
+                        <p>What We Learned at TV Connect 2016</p>
+                        <p>read more</p>
+                    </a>
+                </li>
+
+                <li id="blog3">
+                    <a hfre="">
+                        <p>Big Data Meets TV – The Next Phase In the TV Experience Evolution</p>
+                        <p>read more</p>
+                    </a>
+
+                <li id="blog4">
+                    <a hfre="">
+                        <p>Comigo Will Bring an Infusion of Internet Power and Contextual TV to Life at TV Connect
+                            2016</p>
+                        <p>read more</p>
+                    </a>
+
+                <li id="blog5">
+                    <a hfre="">
+                        <p>Quality, Set-Top-Boxes, Crappy Cars, and Caveat Emptor</p>
+                        <p>read more</p>
+                    </a>
+
+            </ul>
+        </aside>
+
+    </article>
 
 </main>
 
@@ -76,7 +205,67 @@
 <!--links, logo, <small> and social links-->
 <footer>
 
+
+    <!--site maps-->
+
+
+    <ul class="nav-links">
+        <li><a href="">home</a></li>
+        <li class="top-menu"><a href="">our solutions</a></li>  <!-- needs a :hover maybe-->
+        <ul class="sub-menu">               <!--first sub menu-->
+            <li class="middle-menue"><a href="">el cloud</a></li>
+            <ul class="sub-sub-menue">
+                <li><a href="">el<span class="upper-class-font">x</span> </a></li>
+                <li><a href="">ei mind </a></li>
+            </ul>
+            <li class="middle-menue"><a href="">el middleware </a></li>   <!--second sub menu-->
+            <ul class="sub-sub-menue">
+                <li><a href="">android</a></li>
+                <li><a href="">comico whatchapp<span class="upper-class-font">tm</span> applications </a></li>
+            </ul>
+            <li><a href="">android stb </a></li>
+        </ul>
+        <li><a href="">partners</a></li>
+        <li class="top-menue"><a href="">industry inshights</a></li>
+        <ul class="sub-menu">
+            <li><a href="">el cloud</a></li>
+            <li><a href="">el middleware </a></li>
+            <li><a href="">android stb </a></li>
+        </ul>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+    </ul>
+
+    <!--logo on company-->
+
+
+    <a href="index-comigo.html"> <img src="logo.png" alt="logo of comigo"> </a>
+
+
+    <section class="rights-and-more">
+        <small>All rights reserved Comigo © 2016</small>
+        <ul id="buisness-links">
+            <li>terms of use</li>
+            <li>contact us</li>
+            <li>privecy policy</li>
+        </ul>
+
+
+        <ul class="social-media buttom-links">
+            <li><a href=""> <img src="" alt="Facebook"></a></li>
+            <li><a href=""> <img src="" alt="Twitter"></a></li>
+            <li><a href=""> <img src="" alt="linkdin"></a></li>
+            <li><a href=""> <img src="" alt="youyube"></a></li>
+        </ul> <!--social media link-->
+
+        <p><span class="developers">developed by</span> <a href="">FATLADY</a></p>
+
+    </section>
+
 </footer>
+
+
+
 
 </body>
 </html>
