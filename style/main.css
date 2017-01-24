@@ -1,0 +1,42 @@
+
+/*@media (max-width: 700px) {*/
+
+    /*.nav-links {*/
+        /*display: none;*/
+    /*}*/
+
+/*}*/
+/*LoVe HAte - link   visitedd  hover activate*/
+
+
+    /*.menu-font a,*/
+    .menu-font a:link
+{
+    color: #F1F1F1;
+    text-decoration: none;
+
+}
+
+/* main menues */
+.nav-links > li > a:visited
+{
+    color: #F1F1F1;
+}
+
+.nav-links li > a:hover,
+.nav-links li > a:active
+{
+
+        color:red;
+
+}
+
+/*submenues*/
+
+.sub-menu  li  a:hover {
+    background: red;
+    color: #fff;
+}
+
+
+/* buttons*/
