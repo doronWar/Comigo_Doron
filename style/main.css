@@ -4,40 +4,58 @@
 /*display: none;*/
 /*}*/
 
-/*}*/
+
 /*LoVe HAte - link   visitedd  hover activate*/
 
-/*.menu-font a,*/
-.menu-font a:link {
+
+a:link,
+a:visited {
     color: #A3A3A3;
     text-decoration: none;
-
 }
 
-/* main menues */
-.nav-links > li > a:visited {
-    color: #A3A3A3;
-}
-
-.nav-links li > a:hover,
-.nav-links li > a:active,
-.menu-font li a:hover {
-
+a:hover,
+a:focus,
+a:active {
     color: #F14848;
-
 }
+
 
 /*submenues*/
 
-.sub-menu > li > a:hover,
-.sub-menu > li > ul > li > a:hover {
+.sub-menu > li  a:hover {
     background: #F14848;
     color: #fff;
 }
 
+/*footer background*/
+
+.main-footer {
+
+    background: #1E2024;
+
+}
+
+/*footer main menue*/
+
+.menu-footer-font > li > a
+{
+    color: #fff;
+    background: none;
+    text-decoration: none;
+}
+
+.top-menu {
+    background: none;
+}
+
+
+
+
 /* buttons*/
 
-.btn {
+.btn,
+.btn:hover{
     background: #F14848;
     border-radius: 1.7em;
     text-decoration: none;
@@ -50,35 +68,9 @@
     background: #fff;
 }
 
-.main-footer {
-    background: #1E2024;
-
-}
-
-/*footer menue*/
-
-/*LoVe HAte - link   visitedd  hover activate*/
 
 
 
-.menu-footer-font > li > a:link,
-.menu-footer-font > li > a:visited,
-.menu-footer-font > li > a:active,
-.menu-footer-font > li > a:hover {
-    color: #fff;
-    background: none;
-}
 
-.menu-footer-font li > ul a:link,
-.menu-footer-font li > ul a:visited {
-    color: #A3A3A3;
-    background: none;
-}
 
-.menu-footer-font li > ul a:active,
-.menu-footer-font li > ul a:hover {
-    color: #F14848;
-    background: none;
-
-}
 
