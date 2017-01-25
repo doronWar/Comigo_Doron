@@ -7,10 +7,13 @@
 
 /*LoVe HAte - link   visitedd  hover activate*/
 
+/*fonts*/
+
+/*<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">*/
 
 a:link,
 a:visited {
-    color: #A3A3A3;
+    color: #3d3d3d;
     text-decoration: none;
 }
 
@@ -38,18 +41,25 @@ a:active {
 
 /*footer main menue*/
 
-.menu-footer-font > li > a
-{
-    color: #fff;
-    background: none;
-    text-decoration: none;
+    .menu-footer-font > li > a
+    {
+        color: #fff;
+
+    }
+
+.menu-footer-font li > li > a {
+    color:#7a7a7a;
 }
 
-.top-menu {
-    background: none;
+/*additional links at the end of the page*/
+
+#buisness-links a{
+    color:#fff;
 }
 
-
+#buisness-links a:hover{
+    color: #F14848;
+}
 
 
 /* buttons*/
@@ -59,7 +69,7 @@ a:active {
     background: #F14848;
     border-radius: 1.7em;
     text-decoration: none;
-    color: #fff;
+    color: #3d3d3d;
     font-size: .64em;
 }
 
@@ -69,8 +79,77 @@ a:active {
 }
 
 
+/*blog images*/
+
+/*background for aside*/
+.blog-strip {
+    display: block;
+    /*border: 1px solid red;*/
+}
+
+/*attributes to all blogs*/
 
 
+.blog-strip li{
+    height: 331px;
+    width: 16.6%;
+    display: block;
+    float:left;
+
+}
+
+
+.blog-strip ul::after{
+    content: "";
+    display: table;
+    clear:both;
+
+}
+
+.blog-strip ul{
+    padding-left: 0;
+    margin: 0 0;
+
+}
+
+
+.blog-strip a{
+    display: block;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    font-size:14px;
+    font-family: "open snas","sans-serif";
+
+}
+
+/*for the links*/
+
+.blog-strip a:hover
+{
+    color: #fff;
+}
+
+.blog-strip li:nth-of-type(1)  {
+    background-color:  #F14848;
+
+}
+.blog-strip li:nth-of-type(2) > a {
+    background-image: url(../assets/blog/ibc_post_EI-750x508.png);
+}
+.blog-strip li:nth-of-type(3) > a {
+    background-image: url(../assets/blog/IMG_9294-750x563.jpeg);
+}
+.blog-strip li:nth-of-type(4) > a {
+    background-image: url(../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg);
+}
+.blog-strip li:nth-of-type(5) > a {
+    background-image: url(../assets/blog/post_tv_connect-750x508.jpeg);
+}
+.blog-strip li:nth-of-type(6) > a {
+    background-image: url(../assets/blog/post_quality-750x508.jpeg);
+}
 
 
 
