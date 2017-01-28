@@ -8,28 +8,6 @@
     }
 }
 
-
-/*----------------------font styling----------------------------------*/
-
-
-html,
-p{
-    font: 100% "Source Sans Pro", san-serif;
-}
-
-.all-cap,
-.menu-font span:first-child  {
-    text-transform: uppercase;
-}
-
-
-
-/*LoVe HAte - link   visitedd  hover activate*/
-
-/*fonts*/
-
-/*<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">*/
-
 /*----------------------true to all links-------------------------------*/
 a:link,
 a:visited {
@@ -102,6 +80,114 @@ a:active {
 
 
 
+/*----------------------font styling----------------------------------*/
+
+
+html,
+p{
+    font: 62.5% "Source Sans Pro", san-serif;
+}
+
+
+/* top menues* - inner menue + all titiles on page &engage viewer titles*/
+.all-cap,
+a > span:only-of-type{
+    text-transform: uppercase;
+
+
+}
+
+/*top menu - first capitalized letter in blogs, <p> & menues*/
+
+.capitalize > li,
+.capitalize
+{
+    text-transform: capitalize;
+}
+
+/*captioning first letter in engage viewer menue*/
+
+figcaption::first-letter {
+    text-transform: capitalize;
+
+}
+
+.background-strip > h2 {
+    color: #fff
+}
+
+.first-letter figcaption {
+    color:#606060;
+}
+/*---------------------------------font-zises-------------------------------------*/
+
+/*main menu*/
+.nav-links > li  > a{
+    font-size:1rem;
+    font-weight:300;
+}
+
+/*sub-menu*/
+
+.sub-menu {
+    font-size:2.4rem;
+    font-weight:300;
+}
+
+
+/*titiles on page*/
+
+.white-strip h2 {
+    font-size:1.4rem;
+    font-weight:300;
+}
+
+
+/*background fonts*/
+.background-strip h2{
+    font-size:2.5rem;
+    font-weight:300;
+}
+
+
+.background-strip figcaption{
+    font-size:.9rem;
+    font-weight:100;
+}
+
+.half-strip h2 {
+    font-size:2rem;
+    font-weight:300;
+}
+
+
+/*sub-titiles in page*/
+
+h5 {
+    font-size:2.4rem;
+    font-weight:300;
+}
+
+/*titile for more info*/
+
+.big a:first-child,
+.big h3:first-child {
+    font-size:2.4rem;
+    font-weight:300;
+}
+
+/*sub titles for 'more info'*/
+
+.big a:last-child{
+    font-size:1.8rem;
+    font-weight:300;
+}
+
+
+
+
+
+
 /*---------------------------background-------------------------------*/
 
 #welcoming-strip{
@@ -131,15 +217,18 @@ a:active {
 }
 
 .inhance{
-    background-image: url("../assets/other/home-tv-service-bg2.png");
-    background-position: center center;
-    background-size: cover;
+    background-image: url("../assets/other/ic_EI_cloud_2_home_page.png"),url("../assets/other/home-tv-service-bg1.png");
+    background-position: 25% 0 , center center;
+    background-size: 50% auto, cover ;
+    background-repeat: no-repeat;
 }
 
 .delpoy {
-    background-image: url("../assets/other/home-tv-service-bg1.png");
-    background-position: center center;
-    background-size: cover;
+    background-image: url("../assets/other/ic-stb-screens.png"), url("../assets/other/home-tv-service-bg2.png");
+    background-position: 25% 0 , center center;
+    background-size: 50% auto, cover ;
+    background-repeat: no-repeat;
+    
 }
 
 /*.slim {*/
@@ -210,7 +299,7 @@ a:active {
     background-position: center center;
     background-size: cover;
     color: #fff;
-    font-size:14px;
+    font-size:1rem;
     font-family: "open snas","sans-serif";
 
 }
