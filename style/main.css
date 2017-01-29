@@ -138,14 +138,39 @@ figcaption::first-letter {
 
 }
 
+
 .background-strip > h2 {
-    color: #fff
+    color: #fff;
+    width: 10%;
+    float: left;
+    margin-left: 10%;
+    margin-top:5%;
+    margin-right:20%;
+
+}
+
+.white-strip.content *:nth-child(1n) {
+    /*clear:both;*/
+    width: 10%;
+    margin-left: 5%;
+
+
 }
 
 .first-letter figcaption {
     color:#606060;
 }
-/*---------------------------------font-zises-------------------------------------*/
+
+.text-align {
+    text-align: center;
+}
+
+.half-strip *:nth-child(1) {
+    margin-top: 50%;
+}
+
+
+/*---------------------------------font-zises  -------------------------------------*/
 
 /*main menu*/
 .nav-links > li  > a{
@@ -173,7 +198,7 @@ figcaption::first-letter {
 .background-strip h2{
     font-size:2.5rem;
     font-weight:300;
-    
+
 }
 
 
@@ -242,10 +267,15 @@ h5 {
     height: 428px;
     display: inline-block;
     float:right;
-    text-align: center;
+
 
 }
+.white-strip.content {
 
+    background-color: #fff;
+    width:100%;
+    clear:both;
+}
 .inhance{
     background-image: url("../assets/other/ic_EI_cloud_2_home_page.png"),url("../assets/other/home-tv-service-bg1.png");
     background-position: 25% 0 , center center;
@@ -293,10 +323,11 @@ h5 {
 
 /*background for aside*/
 
-.blog-strip {
-    display: block;
-    /*border: 1px solid red;*/
-}
+/*.blog-strip {*/
+    /*!*overflow: hidden;*!*/
+    /*!*display: block;*!*/
+    /*!*border: 1px solid red;*!*/
+/*}*/
 
 /*sizing of blogs*/
 
@@ -310,15 +341,15 @@ h5 {
 }
 
 
-.blog-strip ul::after{
-    content: "";
-    clear:both;
+/*.blog-strip ul::after{*/
+    /*content: "";*/
+    /*clear:both;*/
 
-}
+/*}*/
 
 .blog-strip ul{
     padding-left: 0;
-    margin: 0 0;
+    /*margin: 0 0;*/
 
 }
 
