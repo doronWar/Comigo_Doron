@@ -227,7 +227,7 @@ nav  li {
     height: 428px;
     background-image: url("../assets/videos/video-action-thriller-750x422.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw auto;
     display: inline-block;
     /*float:right;*/
 }
@@ -296,7 +296,7 @@ nav  li {
 .inhance{
     background-image: url("../assets/other/ic_EI_cloud_2_home_page.png"),url("../assets/other/home-tv-service-bg1.png");
     background-position: 25% 10% , center center;
-    background-size: 50% auto, cover ;
+    background-size: 25vw auto, cover ;
     background-repeat: no-repeat;
     color: #f1f1f1;
 }
@@ -304,7 +304,7 @@ nav  li {
 .delpoy {
     background-image: url("../assets/other/ic-stb-screens.png"), url("../assets/other/home-tv-service-bg2.png");
     background-position: 25% 10% , center center;
-    background-size: 50% auto, cover ;
+    background-size: 25vw auto, cover ;
     background-repeat: no-repeat;
     text-align: left;
     /*padding-left:30px;*/
