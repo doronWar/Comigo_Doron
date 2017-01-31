@@ -75,7 +75,7 @@ figcaption::first-letter {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.5vw; /*1rem;*/
     font-weight:300;
     padding: 18px 30px 18px 30px;
     letter-spacing:1.5px;
@@ -171,7 +171,8 @@ nav  li {
     width: 100vw;
     height: 453px;
     background-position: center center;
-    background-size: cover;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
     padding-top:120px;
     color:#fff;
 
@@ -182,14 +183,14 @@ nav  li {
     margin-top:0;
     margin-bottom:0;
     padding-top: 5px;
-    font-size:1.8rem;
+    font-size: 3vw;/*1.8rem;*/
     font-weight:300;
     line-height:1em;
     word-spacing: .2em;
 }
 
 .welcoming-strip  h2 {
-    font-size:3.5rem;
+    font-size: 5vw; /*3.5rem;*/
     font-weight:300;
     margin-top:0;
     margin-bottom:0;
@@ -457,7 +458,7 @@ nav  li {
 
 .blog-strip li:nth-of-type(1)  {
     background-color:  #F14848;
-    
+
 
 }
 
