@@ -168,13 +168,14 @@ nav  li {
 
 .welcoming-strip{
     background-image: url("../assets/other/homepage-featured-new-1920x745.jpg");
-    width: 100vw;
-    height: 453px;
-    background-position: center center;
-    background-size: 100vw auto;
+    /*width: 100vw;*/
+    height: 38.8vw; /*453px;*/
+    /*background-position: center center;*/
+    background-size: cover;
     background-repeat: no-repeat;
     padding-top:120px;
     color:#fff;
+
 
 }
 
