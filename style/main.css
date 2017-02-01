@@ -139,15 +139,13 @@ nav ul {
     float: right;
     margin-top:0;
     margin-bottom:0;
-
-
-
 }
 
-nav  li {
+nav > ul > li {
     list-style-type: none;
-    display: inline-block;
+    float: left;
     line-height: 66px;
+
 
 }
 
@@ -157,53 +155,85 @@ nav  li {
     padding-right: 10px;
     font-size:1.1rem;
     font-weight:300;
+    padding-left:10px;
+    padding-right: 10px;
+
+    width: 100%;
+    height:100%;
+
 }
 
 .nav-links > li:hover > ul {
     position: absolute;
     display: inline-block;
-    top:60px;
+    top:100%;
     left: 0;
     padding-left: 0;
     width:100vw;
-    background-color: white;
+    height: 140px;
+    background-color: #fefdfc;
+
 
 }
 
 .nav-links > li:hover > ul >li {
     display: inline-block;
+    float:left;
     /*padding-left: 10px;*/
-    width: 32vw;
-    line-height:3em;
+    /*width: 32vw;*/
+    height: 140px;
     /*height: 10vw;*/
 
 }
 .nav-links > li:hover > ul >li a {
     display: inline-block;
-    height: 10vw;
-    width: 32vw;
-    line-height:3em;
+    /*height: 10vw;*/
+    width: 33.3vw;
+    line-height:140px;
+    height:140px;
     text-align: center;
+    /*padding-bottom: 20px;*/
     /*border: 1px solid red;*/
 }
 
-.nav-links > li:hover > ul >li:hover ul {
+
+
+/*need to center the line!!!!!!!*/
+
+.nav-links > li > ul >li:hover ul {
     position: absolute;
-    top:144px;
+    top: 100%;
     left:0;
     display: inline-block;
-    background: #fff;
+    float:left;
     width:100vw;
+    padding-left: 0;
+    background-color: #fefdfc
 }
 
-.nav-links > li:hover > ul >li:hover ul li,
-.nav-links > li:hover > ul >li:hover ul li a{
+.nav-links > li > ul >li:hover ul li{
     display: inline-block;
-    width: 40vw;
-    line-height:3em;
-    /*border: 1px solid red;*/
+    width: 50%;
+    height: 100%;
+    line-height:140px;
+    float:left;
+    /*padding-right:100px;*/
+
+}
+.nav-links > li > ul >li:hover ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 140px;
+    float: left;
+
 }
 
+.nav-links span {
+    vertical-align: middle;
+    line-height: 1px;
+    display: inline-block;
+}
     /*-----------------------------submenues (links)---------------------------*/
 
 .sub-menu,
@@ -218,6 +248,7 @@ nav  li {
 .sub-menu > li  a:hover {
     background: #F14848;
     color: #fff;
+
 
 
 }
@@ -375,6 +406,7 @@ margin-bottom:0;
     background-size: 25vw auto, cover ;
     background: url("../assets/other/ic_EI_cloud_2_home_page.png"), url("../assets/other/home-tv-service-bg1.png") no-repeat 25% 10%, center center;
     color: #f1f1f1;
+    background-repeat: no-repeat;
 }
 
 .delpoy {
@@ -432,19 +464,19 @@ margin-bottom:0;
 /*----------------------------floting boxes of demo--------------------------*/
 
 .big{
-    height: 625px;
+    height: 45.7vw;
 }
 
 .learn-more {
     display: inline-block;
     width:60%;
-    height:312px;
+    height:22.8vw;
     margin-top: 0;
     background-color: #f9f9f9;
 
 }
 .learn-more h3{
-    font-size:4em;
+    font-size:4vw;
     font-weight:300;
     width: 66%;
     color:#464646;
@@ -471,7 +503,7 @@ margin-bottom:0;
     background-size: 90% auto;
     background-position: 100% 100%;
     width:40%;
-    height: 625px;
+    height: 45.7vw;
     background-color: #efefef;
 }
 
@@ -488,17 +520,19 @@ margin-bottom:0;
 .social-media.html-links {
     display: inline-block;
     width:25%;
-    height:312px;
+    height:22.8vw;
     margin-top: 0;
     margin-bottom:0;
     background-color: #efefef;
 }
 
 .social-media.html-links ul {
+    display: block;
     width:70%;
-    margin:0 auto;
+    margin: 0 auto;
+    /*line-height: 100%;*/
     padding-top:125px;
-    font-size:1.5em;
+    font-size:1.5vw; /*1.5em*/
 }
 .social-media.html-links li {
     list-style-type:none;
@@ -511,14 +545,14 @@ margin-bottom:0;
 
 .meeting {
     display:inline-block;
-    height:312px;
+    height:22.8vw;
     width:35%;
     background-color: #e8e8e8;
     background-image: url(../assets/other/img-event-IBC.jpg);
     background-repeat:no-repeat;
     background-position: center center;
     float: right;
-    font-size:1.5em;
+    font-size:1.7vw; /*1.5em*/
 }
 
 .meeting a{
