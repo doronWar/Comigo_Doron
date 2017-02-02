@@ -169,7 +169,7 @@ nav > ul > li {
     top:100%;
     left: 0;
     padding-left: 0;
-    width:100vw;
+    width:100%;
     height: 140px;
     background-color: #fefdfc;
 
@@ -180,7 +180,7 @@ nav > ul > li {
     display: inline-block;
     float:left;
     /*padding-left: 10px;*/
-    /*width: 32vw;*/
+    width: 33.3%;
     height: 140px;
     /*height: 10vw;*/
 
@@ -188,7 +188,7 @@ nav > ul > li {
 .nav-links > li:hover > ul >li a {
     display: inline-block;
     /*height: 10vw;*/
-    width: 33.3vw;
+    width: 100%;
     line-height:140px;
     height:140px;
     text-align: center;
@@ -206,7 +206,7 @@ nav > ul > li {
     left:0;
     display: inline-block;
     float:left;
-    width:100vw;
+    width:100%;
     padding-left: 0;
     background-color: #fefdfc
 }
@@ -231,8 +231,9 @@ nav > ul > li {
 
 .nav-links span {
     vertical-align: middle;
-    line-height: 1px;
+    line-height: 1;
     display: inline-block;
+    width: 80%;
 }
     /*-----------------------------submenues (links)---------------------------*/
 
@@ -259,7 +260,7 @@ nav > ul > li {
 
 .welcoming-strip{
     background-image: url("../assets/other/homepage-featured-new-1920x745.jpg");
-    /*width: 100vw;*/
+    width: 100%;
     height: 38.8vw; /*453px;*/
     /*background-position: center center;*/
     background-size: cover;
@@ -295,7 +296,7 @@ nav > ul > li {
 /*----------------------------why comigo------------------------------*/
 
 .slim {
-    width:100vw;
+    width:100%;
     height: 355px;
     padding-top:4%;
 }
@@ -317,7 +318,7 @@ nav > ul > li {
 /*-----------------------engage viewers srtip--------------------------*/
 
 .background-strip {
-    width: 100vw;
+    width: 100%;
     height: 56.2vw;
     background-image: url("../assets/videos/video-action-thriller-750x422.jpg");
     background-repeat: no-repeat;
@@ -403,7 +404,7 @@ margin-bottom:0;
 
 
 .inhance{
-    background-size: 25vw auto, cover ;
+    background-size: 50% auto, cover ;
     background: url("../assets/other/ic_EI_cloud_2_home_page.png"), url("../assets/other/home-tv-service-bg1.png") no-repeat 25% 10%, center center;
     color: #f1f1f1;
     background-repeat: no-repeat;
@@ -412,7 +413,7 @@ margin-bottom:0;
 .delpoy {
     background-image: url("../assets/other/ic-stb-screens.png"), url("../assets/other/home-tv-service-bg2.png");
     background-position: 25% 10% , center center;
-    background-size: 25vw auto, cover ;
+    background-size: 50% auto, cover ;
     background-repeat: no-repeat;
     text-align: left;
     /*padding-left:30px;*/
@@ -438,7 +439,7 @@ margin-bottom:0;
     background-position:  115% 60%;
     height:741px;
 
-    width:100vw;
+    width:100%;
     clear:both;
     padding-left:10%;
 }
@@ -448,7 +449,7 @@ margin-bottom:0;
     font-weight:300;
     margin-right:0;
     padding-top: 100px;
-    width:15vw;
+    width:15%;
 }
 
 .white-strip.content p {
@@ -482,6 +483,8 @@ margin-bottom:0;
     color:#464646;
     padding-top:17%;
     display: inline-block;
+    margin-top: 0;
+    margin-bottom:0;
 }
 
 .learn-more a{
@@ -565,7 +568,7 @@ margin-bottom:0;
     display: inline-block;
     width: 55%;
     color: #6F6F6F;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .meeting a:hover,
 .meeting a:active{
@@ -578,6 +581,7 @@ margin-bottom:0;
 
 .blog-strip {
     position: relative;
+    clear: both;
 }
 
 .blog-strip li:nth-of-type(1)  {
@@ -789,8 +793,7 @@ small {
 
 
 h3{
-    margin-top: 0;
-    margin-bottom:0;
+
 }
 
 
