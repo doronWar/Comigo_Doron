@@ -76,14 +76,20 @@ figcaption::first-letter {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    font-size: 1.5vw; /*1rem;*/
+    font-size: 1.1vw; /*1rem;*/
     font-weight:300;
-    padding: 1% 3% 1% 3%;
+    padding: 1% 2.5% 1% 2.5%;
             /*18px 30px 18px 30px;*/
     letter-spacing:1px;
     text-align: center;
     margin-top:23px;
+    transition-property: margin-top;
+    transition-duration: 130ms;
 
+}
+.btn:hover {
+    box-shadow: 0 10px 25px #ababab;
+    margin-top:21px;
 }
 
 .btn.btn-negetive,
@@ -176,6 +182,7 @@ nav > ul > li {
     background-color: #fefdfc;
 
 
+
 }
 
 .nav-links > li:hover > ul >li {
@@ -244,6 +251,7 @@ nav > ul > li {
     display: none;
     font-size: 2.4em;
     font-weight:300;
+    
     /*line-height:3em;*/
 }
 
