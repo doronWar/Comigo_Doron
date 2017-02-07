@@ -93,16 +93,36 @@ figcaption::first-letter {
 
 /*-----------------------------submenues (links)---------------------------*/
 
-.sub-menu {
-    display: none;
+
+.sub-menu{
     font-size: 2.4em;
     font-weight: 300;
-
     line-height: 3em;
+    height: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 0;
+    opacity: 0;
+    padding-left: 0;
+    width: 0;
+    background-color: #fefdfc;
+    /*display: inline-block;*/
+    overflow: hidden;
+    transition-property: height, opacity;
+    transition-duration: .3s;
 }
 
 .sub-menu ul {
-    display: none;
+    /*display: none;*/
+    position: absolute;
+    top:140px;
+    left: 0;
+    height: 0;
+
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: .3s;
 
 }
 
@@ -183,15 +203,15 @@ nav > ul > li {
 /*}*/
 
 .nav-links > li:hover > ul {
-    position: absolute;
-    display: inline-block;
-    top: 100%;
-    left: 0;
-    padding-left: 0;
-    width: 100%;
+    /*position: absolute;*/
+    /*display: inline-block;*/
+    /*top: 100%;*/
+    /*left: 0;*/
+
     height: 140px;
-    background-color: #fefdfc;
+    width: 100%;
     opacity: .98;
+    overflow: visible;
 
 }
 
@@ -202,6 +222,7 @@ nav > ul > li {
     /*padding-left: 10px;*/
     width: 33.3%;
     height: 140px;
+
 
     /*height: 10vw;*/
 
@@ -214,6 +235,7 @@ nav > ul > li {
     line-height: 140px;
     height: 140px;
     text-align: center;
+
     /*padding-bottom: 20px;*/
     /*border: 1px solid red;*/
 }
@@ -224,6 +246,7 @@ nav > ul > li {
     position: absolute;
     top: 100%;
     left: 0;
+    height: 100%;
     display: inline-block;
     float: left;
     width: 100%;
