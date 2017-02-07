@@ -83,13 +83,14 @@ figcaption::first-letter {
     letter-spacing:1px;
     text-align: center;
     margin-top:23px;
-    transition-property: margin-top;
-    transition-duration: 130ms;
+    transition-property: all;
+    transition-duration: 300ms;
 
 }
 .btn:hover {
-    box-shadow: 0 10px 25px #ababab;
-    margin-top:21px;
+    box-shadow: 0 10px 25px rgba(171, 171, 171, 0.5);
+    transform: translateY(-5px);
+    /*margin-top:21px;*/
 }
 
 .btn.btn-negetive,
@@ -97,6 +98,31 @@ figcaption::first-letter {
     color: #F14848;
     background: #fff;
 }
+
+
+/*-----------------------------submenues (links)---------------------------*/
+
+.sub-menu{
+    display: none;
+    font-size: 2.4em;
+    font-weight:300;
+
+    line-height:3em;
+}
+
+
+.sub-menu ul{
+    display: none;
+
+}
+.sub-menu > li  a:hover {
+    background: #F14848;
+    color: #fff;
+
+
+}
+
+
 
 
 
@@ -165,10 +191,8 @@ nav > ul > li {
     font-weight:300;
     padding-left:10px;
     padding-right: 10px;
-
     width: 100%;
     height:100%;
-
 }
 
 
@@ -181,7 +205,11 @@ nav > ul > li {
     width:100%;
     height: 140px;
     background-color: #fefdfc;
+
+
 }
+
+
 
 
 
@@ -245,29 +273,6 @@ nav > ul > li {
     width: 80%;
 
 }
-
-
-/*-----------------------------submenues (links)---------------------------*/
-
-.sub-menu{
-    display: none;
-    font-size: 2.4em;
-    font-weight:300;
-
-    /*line-height:3em;*/
-}
-
-.sub-menu ul{
-    display: none;
-
-}
-.sub-menu > li  a:hover {
-    background: #F14848;
-    color: #fff;
-
-
-}
-
 
 
 
@@ -506,11 +511,13 @@ margin-bottom:0;
 }
 
 
+
 /*----------------------------floting boxes of demo--------------------------*/
 
 .big{
     height: 45.7vw;
     position: relative;
+    z-index: 20;
 }
 
 .learn-more {
@@ -553,8 +560,17 @@ margin-bottom:0;
     width:40%;
     height: 45.7vw;
     background-color: #efefef;
+    /*box-shadow: 0 0 0 black;*/
+    transform: scale(1);
+    transition-property: box-shadow, tranform:scale ;
+    transition-duration:.3s;
 }
 
+.demo:hover {
+    box-shadow: 0px 0px 10px #ababab;
+    transform: scale(1.01);
+    z-index: 10;
+}
 .big .demo > a {
     font-size: 6vw; /*5em ; */
     color:#464646;
@@ -609,8 +625,17 @@ margin-bottom:0;
     background-position: center center;
     float: right;
     font-size:1.7vw; /*1.5em*/
+    /*box-shadow: 0 0 0 black;*/
+    transform: scale(1);
+    transition-property: box-shadow, transform:scale ;
+    transition-duration:.3s;
 }
+.meeting:hover {
+    box-shadow: 0px 0px 10px #ababab;
+    transform: scale(1.02);
+    z-index: 10;
 
+}
 .meeting a{
     display: inline-block;
 
@@ -632,8 +657,12 @@ margin-bottom:0;
 
 /*title of blog section*/
 
+.blog-strip{
+    z-index: 10;
+}
 .blog-strip ul {
     position: relative;
+
     /*clear: both;*/
 }
 
@@ -657,50 +686,65 @@ margin-bottom:0;
 
 }
 
-.blog-strip li{
+.blog-strip li {
     height: 38.8vw;
     width: 16.6%;
     display: inline-block;
-    float:left;
+    float: left;
+
+
+    /*transform: scale(1);*/
+    /*transition-property: transform:scale, z-index;*/
+    /*transition-duration: .1s;*/
+    /*z-index: 10;*/
+}
     /*background-color: rgba(0,0,0, 1);*/
     /*z-index: 100;*/
     /*border:1px solid red;*/
 
-}
+/*.blog-strip li:hover{*/
+    /*transform: scale(1.03);*/
+    /*!*z-index: 20;*!*/
+/*}*/
 
 /*text in blogs*/
 .blog-strip li span:nth-of-type(1){
     position: absolute;
     bottom: 60px ;
-    width:16.6%;
+    width:100%;
     height:52px;
-    /*display: inline-block;*/
-    /*margin-top: 51vh;   !*116%;*!*/
-    /*float: right;*/
 
-
-    /*padding-top: 116%;*/
 }
 
-.blog-strip li span:nth-of-type(2){
+/*.blog-strip  {*/
+    /*overflow: hidden;*/
+/*}*/
+.blog-strip li a span:nth-of-type(2){
+    /*display: inline-block;*/
     position: absolute;
-    bottom: 0;
-    width:16.6%;
-
-    /*display:inline-block;*/
-    background: red;
-    /*border: 1px solid red;*/
-    /*width: 100%;*/
+    bottom: -60px;
+    left: 0;
+    width:100%;
+    /*visibility: hidden;*/
     margin-left:0;
     height: 10%;
     line-height:3em;
-    /*margin-top: 39px;*/
-    /*margin-top: 10%;*/
-    /*margin-bottom: 0;*/
-    /*float: left;*/
     text-align: center;
-    /*margin-bottom:10px;*/
+    transition-property: transform;
+    transition-duration: .7s;
+    background: red;
+    /*border: 1px solid red;*/
+
 }
+
+.blog-strip li a:hover span:nth-of-type(2){
+
+    width:100%;
+    transform: translateY(-60px);
+    /*bottom: 0;*/
+    /*visibility: visible;*/
+}
+
 
 /*true to all links in blogs*/
 .blog-strip > ul > li:nth-child(1n+2) a{
@@ -740,10 +784,25 @@ margin-bottom:0;
 
 
 
+.blog-strip li:nth-of-type(1n+2) > a
+{
+    position: relative;
+    transition-property: transform;
+    transition-duration: .1s ;
+    overflow: hidden;
+    z-index: 10;
+}
+.blog-strip li:nth-of-type(1n+2) > a:hover{
+    transform: scale(1.1);
+    z-index: 20;
+}
+
 .blog-strip li:nth-of-type(2) > a {
     background-image: url(../assets/blog/ibc_post_EI-750x508.png);
 
 }
+
+
 .blog-strip li:nth-of-type(3) > a {
     background-image: url(../assets/blog/IMG_9294-750x563.jpeg);
 }
