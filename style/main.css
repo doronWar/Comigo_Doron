@@ -296,12 +296,13 @@ nav > a > img {
     position: absolute;
     right: 0;
     top: 15%;
-    display: inline-block;
+    /*display: inline-block;*/
 
     margin: 0;
+
     /*margin: 0 auto;*/
     display: none;
-    border: 1px solid red;
+
 
     /*float: right;*/
 
@@ -360,6 +361,7 @@ nav > a > img {
     background: url("../assets/other/ic_EI_cloud_2_home_page.png"), url("../assets/other/home-tv-service-bg1.png") no-repeat 25% 10%, center center;
     color: #f1f1f1;
     background-repeat: no-repeat;
+    background-position: 25% 10%, center center;
 }
 
 .delpoy {
@@ -377,7 +379,7 @@ nav > a > img {
 }
 
 .half-strip *:nth-child(1) {
-    margin-top: 60%;
+    margin-top: 58%;
 }
 
 /*------------------------unique expirience strip---------------------------*/
@@ -389,7 +391,7 @@ nav > a > img {
     background-repeat: no-repeat;
     background-size: 60% auto;
     background-position: 115% 60%;
-    height: 741px;
+    height: 60vw; /*741px;*/
 
     width: 100%;
     /*clear:both;*/
@@ -400,7 +402,7 @@ nav > a > img {
     font-size: 3rem;
     font-weight: 300;
     margin-right: 0;
-    padding-top: 100px;
+    padding-top: 70px;
     width: 15%;
 }
 
@@ -464,7 +466,7 @@ nav > a > img {
     background-color: #efefef;
     /*box-shadow: 0 0 0 black;*/
     transform: scale(1);
-    transition-property: box-shadow,
+    transition-property: box-shadow;
     tranform: scale;
     transition-duration: .3s;
 }
@@ -573,10 +575,12 @@ nav > a > img {
 .blog-strip {
     /*z-index: 10;*/
     position: relative;
+
 }
 
 .blog-strip ul {
     position: relative;
+
 
     /*clear: both;*/
 }
@@ -585,12 +589,35 @@ nav > a > img {
     background-color: #F14848;
 }
 
-.blog-strip h2 {
-    font-size: 2.4rem;
-    font-weight: 300;
-    margin-bottom: 0;
-    /*margin-top:51vh;*/
+.blog-strip .blog-title {
+    position: absolute;
+    /*top: 63%;*/
+    bottom:0;
+    padding-left: 20px;
+    height: 185px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: "open snas", "sans-serif";
+    width: 16.6%;
+
 }
+
+.blog-strip .blog-title h2 {
+    font-size: 4rem;
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+
+
+}
+/*.blog-strip h2 {*/
+    /*font-size: 2.4rem;*/
+    /*font-weight: 300;*/
+    /*margin-bottom: 0;*/
+    /*border: 1px solid blue;*/
+    /*!*margin-top:51vh;*!*/
+/*}*/
 
 /*blog layout*/
 
@@ -615,6 +642,7 @@ nav > a > img {
     bottom: 0;
     width: 100%;
     height: 52px;
+
     /*border: 1px solid red;*/
     transition: transform .3s linear;
 
@@ -661,25 +689,10 @@ nav > a > img {
     background-size: cover;
     color: #fff;
     font-size: 1rem;
-    font-family: "open snas", "sans-serif";
+    /*font-family: "open snas", "sans-serif";*/
 }
 
-.blog-strip .blog-title {
-    position: absolute;
-    top: 65%;
-    padding-left: 20px;
-    height: 185px;
-    color: #fff;
-    font-size: 1rem;
-    font-family: "open snas", "sans-serif";
-    width: 16.6%;
-}
 
-.blog-strip .blog-title h2 {
-    font-size: 4rem;
-    width: 50%;
-    margin-top: 0px;
-}
 
 .blog-strip a:hover {
     color: #fff;
@@ -808,6 +821,7 @@ nav > a > img {
     height: 3.1vw;
     text-align: center;
 
+
 }
 
 .rights-and-more {
@@ -900,6 +914,12 @@ label{
 
 
 */
+@media (max-width: 1200px) {
+    .menu-footer-font,
+    .rights-and-more {
+        max-width: 880px;
+    }
+}
 
 
 @media (min-width: 754px) {
@@ -1012,7 +1032,17 @@ label{
 }
 
 
+
+
+
+
+
+
 @media (min-width: 895px) and (max-width: 1149px){
+
+
+
+    /*--------------------------engage strip resizing---------------------*/
 
     .background-strip h2 {
         font-size: 1.6rem;
@@ -1035,23 +1065,64 @@ label{
     }
 
     .more-info a:hover ~ figure  {
-        width: 35%;
+        width: 30%;
+        top:23%
         /*height:34%;*/
     }
-    figcaption{
-        margin-bottom: 20px;
+    .more-info a:hover ~ figure figcaption {
+        top:-70px;
     }
+
+
+
+    /*--------------------------half strip resizing---------------------*/
+
+    .half-strip *:nth-child(1) {
+        margin-top:40%;
+        height:82px;
+    }
+
+    .inhance {
+        background-size: 40%, auto, cover;
+
+    }
+    .delpoy {
+        background-size: 30%, auto, cover;
+    }
+
+    /*--------------------------blog strip resizing---------------------*/
+
+
+    .blog-strip .blog-title h2 {
+        font-size: 2rem;
+        padding-top: 50%;
+    }
+
+    /*.blog-strip .blog-title {*/
+        /*position: absolute;*/
+        /*top: 67%;*/
+
+    /*}*/
+
+
 }
 
+
+
+
+
 @media (min-width: 753px) and (max-width: 894px){
+
+    /*--------------------------engage strip resizing---------------------*/
+
 
     .more-info a:hover ~ figure {
         width: 25%;
         top:40%;
         /*height:34%;*/
     }
-    figcaption{
-        top:-150px;
+    .more-info a:hover ~ figure figcaption {
+        top:-120px;
     }
 
 
@@ -1071,7 +1142,40 @@ label{
     .more-info li{
         margin-bottom:10px;
     }
+
+    /*--------------------------half strip resizing---------------------*/
+
+    .half-strip *:nth-child(1) {
+        margin-top:30%;
+        height:82px;
+    }
+
+    .inhance {
+        background-size: 30%, auto, cover;
+
+    }
+    .delpoy {
+        background-size: 20%, auto, cover;
+    }
+
+
+    /*--------------------------blog strip resizing---------------------*/
+
+
+    .blog-strip .blog-title h2 {
+        font-size: 1.8rem;
+        padding-top: 65%;
+    }
+    .blog-strip li a:hover span:nth-of-type(2){
+        font-size: .7rem;
+    }
+
 }
+
+
+
+
+
 /*------------------------------------
                     main menu small screen
 
@@ -1109,7 +1213,7 @@ label{
 
     input:checked ~ .nav-top  {
         overflow: auto;
-        height:100vh;
+        height:calc(100vh - 66px);
         /*border: 1px solid red;*/
     }
     input:checked ~ .nav-top  li {
@@ -1169,15 +1273,195 @@ label{
 
     }
 
-}
 
-/*footer manu temp*/
-@media (max-width: 1200px) {
-    .menu-footer-font,
-    .rights-and-more {
-        max-width: 880px;
+    /* ---------------------------buttons--------------------------*/
+
+
+    .btn,
+    .btn:hover,
+    .btn:visited {
+        font-size: .7rem
+    }
+
+    /*-----------------------------welcom strip----------------------------*/
+
+    .welcoming-strip {
+        height:96vw;
+        background-size: auto;
+        background-position: center;
+        padding-top:30%;
+    }
+
+    .welcoming-strip h1 {
+        font-size: 3.2rem;
+        margin-bottom: 5%;
+    }
+    .welcoming-strip h2 {
+        font-size: 5rem;
+        margin-bottom: 5%;
+    }
+
+
+    /*----------------------------why comigo------------------------------*/
+
+
+    .white-strip h2 {
+        font-size: 1.8rem;
+    }
+
+    .white-strip h5 {
+        font-size: 3.2rem;
+    }
+
+    /*-----------------------engage viewers srtip--------------------------*/
+
+    .background-strip {
+        height:106vw;
+
+    }
+
+
+    .background-strip h2 {
+        font-size: 2rem;
+        text-align: center;
+
+    }
+
+    .background-strip p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .background-strip > div {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+
+    .more-info {
+        position: static;
+        /*top:30%;*/
+        /*left:0;*/
+        display: block;
+        height:5%;
+        padding-top: 0;
+        width: 80%;
+        margin: auto;
+        border: 1px solid red;
+
+    }
+
+    .more-info li {
+        float: left;
+        /*display: inline-block;*/
+        list-style-type: none;
+        margin-bottom: 20px;
+    }
+
+    .more-info a {
+        font-size: .7rem;
+        display: inline-block;
+        width: 100%; /*500px*/
+    }
+
+    .background-strip figure {
+        top: 50%;
+        right: 20%;
+    }
+
+    .more-info a:hover ~ figure img {
+        width: 50%;
+
+    }
+
+    .more-info a:hover ~ figure figcaption {
+    font-size: 1.1rem;
+    width: 80%; /*500px;*/
+    }
+
+
+
+    /*-----------------------------half-strips-----------------------*/
+
+    .half-strip {
+        width: 100%;
+        height: 91.4vw;
+    }
+
+
+
+    /*------------------------unique expirience strip---------------------------*/
+
+    .white-strip.content {
+        background-position: 50% 5%;
+        height: 90vw;
+    }
+
+    .white-strip.content h5 {
+        font-size: 3rem;
+        font-weight: 300;
+        margin-right: 0;
+        padding-top: 50%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .white-strip.content p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .white-strip.content a {
+        width:20%;
+        padding: 15px 10px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /*----------------------------floting boxes of demo--------------------------*/
+
+    .big {
+        height: 300vw;
+        position: relative;
+        /*z-index: 10;*/
+    }
+
+    .learn-more {
+        display: inline-block;
+        width: 100%;
+        height: 70vw;
+    }
+
+    .learn-more h3 {
+        font-size: 6vw;
+        width: 100%;
+        padding-top: 15%;
+        padding-bottom:15%;
+        display: block;
+        text-align: center;
+     }
+
+
+    .learn-more a {
+        display: block;
+        width: 100%;
+        padding-top: 15%;
+        height: 50%;
+
+        border: 1px solid black;
+
+    }
+    .demo {
+        display: block;
+        width: 100%;
+        height: 90vw;
     }
 }
+
+
+
+
+/*footer manu temp*/
 
 .clearfix:before,
 .clearfix:after {
