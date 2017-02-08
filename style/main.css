@@ -3,6 +3,7 @@
 /*----------------------box-sizing for page-----------------------------*/
 html {
     box-sizing: border-box;
+
 }
 
 *,
@@ -67,7 +68,7 @@ figcaption::first-letter {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    font-size: 1.1vw; /*1rem;*/
+    font-size: 1.2rem; /*1.1vw;*/
     font-weight: 300;
     padding: 1% 2.5% 1% 2.5%;
     /*18px 30px 18px 30px;*/
@@ -95,7 +96,7 @@ figcaption::first-letter {
 
 
 .sub-menu{
-    font-size: 2.4em;
+    font-size: 2.4rem; /*2.4em;*/
     font-weight: 300;
     line-height: 3em;
     height: 0;
@@ -170,30 +171,6 @@ nav > a > img {
 
 /*menu style*/
 
-nav ul {
-    float: right;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-nav > ul > li {
-    list-style-type: none;
-    float: left;
-    line-height: 66px;
-
-}
-
-.nav-links > li > a {
-    display: inline-block;
-    line-height: 66px;
-    padding-right: 10px;
-    font-size: 1rem;
-    font-weight: 300;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
-    height: 100%;
-}
 
 /*.sub-menu*/
 /*{*/
@@ -202,84 +179,7 @@ nav > ul > li {
 /*transition-duration: 1s;*/
 /*}*/
 
-.nav-links > li:hover > ul {
-    /*position: absolute;*/
-    /*display: inline-block;*/
-    /*top: 100%;*/
-    /*left: 0;*/
 
-    height: 140px;
-    width: 100%;
-    opacity: .98;
-    overflow: visible;
-
-}
-
-.nav-links > li:hover > ul > li {
-
-    display: inline-block;
-    float: left;
-    /*padding-left: 10px;*/
-    width: 33.3%;
-    height: 140px;
-
-
-    /*height: 10vw;*/
-
-}
-
-.nav-links > li:hover > ul > li a {
-    display: inline-block;
-    /*height: 10vw;*/
-    width: 100%;
-    line-height: 140px;
-    height: 140px;
-    text-align: center;
-
-    /*padding-bottom: 20px;*/
-    /*border: 1px solid red;*/
-}
-
-/*need to center the line!!!!!!!*/
-
-.nav-links > li > ul > li:hover ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    height: 100%;
-    display: inline-block;
-    float: left;
-    width: 100%;
-    padding-left: 0;
-    background-color: #fefdfc
-}
-
-.nav-links > li > ul > li:hover ul li {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    line-height: 140px;
-    float: left;
-    /*padding-right:100px;*/
-
-}
-
-.nav-links > li > ul > li:hover ul li a {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    line-height: 140px;
-    /*float: left;*/
-
-}
-
-.nav-links span {
-    vertical-align: middle;
-    line-height: 1;
-    display: inline-block;
-    width: 80%;
-
-}
 
 /*-----------------------------welcom strip----------------------------*/
 
@@ -307,7 +207,7 @@ nav > ul > li {
 }
 
 .welcoming-strip h2 {
-    font-size: 5vw; /*3.5rem;*/
+    font-size:  3.5rem;  /*5vw;*/
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 0;
@@ -362,7 +262,8 @@ nav > ul > li {
 
 .background-strip p {
     color: #606060;;
-    font-size: 1em;
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 .more-info {
@@ -380,10 +281,11 @@ nav > ul > li {
 }
 
 .more-info a {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     display: inline-block;
-    width: 110px;
+    width: 35%; /*500px*/
     padding: 5px 5px;
+
 
 }
 
@@ -392,10 +294,15 @@ nav > ul > li {
     font-weight: 100;
     color: #606060;
     position: absolute;
-    right: 3%;
+    right: 0;
     top: 15%;
+    display: inline-block;
+
+    margin: 0;
     /*margin: 0 auto;*/
     display: none;
+    border: 1px solid red;
+
     /*float: right;*/
 
 }
@@ -417,14 +324,14 @@ nav > ul > li {
     top: -50px;
     right: 0;
     font-size: 1.1rem;
-    width: 500px;
+    width: 100%; /*500px;*/
     /*margin-bottom: 20px;*/
     /*margin-right: 0;*/
 
 }
 
 .background-strip > div {
-    width: 10%;
+    width: 13%;
     float: left;
     margin-left: 10%;
     /*margin-top:5%;*/
@@ -444,7 +351,7 @@ nav > ul > li {
 }
 
 .half-strip h2 {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 300;
 }
 
@@ -490,7 +397,7 @@ nav > ul > li {
 }
 
 .white-strip.content h5 {
-    font-size: 52px;
+    font-size: 3rem;
     font-weight: 300;
     margin-right: 0;
     padding-top: 100px;
@@ -769,7 +676,7 @@ nav > ul > li {
 }
 
 .blog-strip .blog-title h2 {
-    font-size: 4em;
+    font-size: 4rem;
     width: 50%;
     margin-top: 0px;
 }
@@ -860,7 +767,7 @@ nav > ul > li {
 .menu-footer-font > li > a {
     display: inline-block;
     color: #fff;
-    font-size: .7em;
+    font-size: .7rem;
     font-weight: 300;
     text-align: center;
     height: 20px;
@@ -887,7 +794,7 @@ nav > ul > li {
 .menu-footer-font > li ul > li a {
     display: inline-block;
     width: 100%;
-    font-size: .7em;
+    font-size: .7rem;
 }
 
 .footer-b-background {
@@ -960,7 +867,7 @@ small {
 .footer-b-background p:last-child a {
     display: inline;
     color: #474747;
-    font-size: .9em;
+    font-size: .9rem;
 
 }
 
@@ -981,11 +888,285 @@ h3 {
 
 /*----------------------------relative sizing------------------------------*/
 
-/*main menu*/
-@media (max-width: 700px) {
+#menubutton,
+label{
+   display: none;
+   }
+
+
+/*
+
+                    main menu big screen
+
+
+*/
+
+
+@media (min-width: 754px) {
+
+    nav ul {
+        float: right;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    nav > ul > li {
+        list-style-type: none;
+        float: left;
+        line-height: 66px;
+
+    }
+
+    .nav-links > li > a {
+        display: inline-block;
+        line-height: 66px;
+        padding-right: 10px;
+        font-size: 1rem;
+        font-weight: 300;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .nav-links > li:hover > ul {
+        /*position: absolute;*/
+        /*display: inline-block;*/
+        /*top: 100%;*/
+        /*left: 0;*/
+
+        height: 140px;
+        width: 100%;
+        opacity: .98;
+        overflow: visible;
+
+    }
+
+    .nav-links > li:hover > ul > li {
+
+        display: inline-block;
+        float: left;
+        /*padding-left: 10px;*/
+        width: 33.3%;
+        height: 140px;
+
+
+        /*height: 10vw;*/
+
+    }
+
+    .nav-links > li:hover > ul > li a {
+        display: inline-block;
+        /*height: 10vw;*/
+        width: 100%;
+        line-height: 140px;
+        height: 140px;
+        text-align: center;
+
+        /*padding-bottom: 20px;*/
+        /*border: 1px solid red;*/
+    }
+
+    /*need to center the line!!!!!!!*/
+
+    .nav-links > li > ul > li:hover ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 100%;
+        display: inline-block;
+        float: left;
+        width: 100%;
+        padding-left: 0;
+        background-color: #fefdfc
+    }
+
+    .nav-links > li > ul > li:hover ul li {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        line-height: 140px;
+        float: left;
+        /*padding-right:100px;*/
+
+    }
+
+    .nav-links > li > ul > li:hover ul li a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        line-height: 140px;
+        /*float: left;*/
+
+    }
+
+    .nav-links span {
+        vertical-align: middle;
+        line-height: 1;
+        display: inline-block;
+        width: 80%;
+
+    }
+}
+
+
+@media (min-width: 895px) and (max-width: 1149px){
+
+    .background-strip h2 {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+    }
+    .background-strip p {
+        font-size: .8rem;
+        margin-top: 5px;
+    }
+
+    .background-strip > div {
+    width:18%;
+    }
+
+    .more-info a{
+        font-size:1rem;
+    }
+    .more-info li{
+        margin-bottom:10px;
+    }
+
+    .more-info a:hover ~ figure  {
+        width: 35%;
+        /*height:34%;*/
+    }
+    figcaption{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 753px) and (max-width: 894px){
+
+    .more-info a:hover ~ figure {
+        width: 25%;
+        top:40%;
+        /*height:34%;*/
+    }
+    figcaption{
+        top:-150px;
+    }
+
+
+
+    .background-strip h2 {
+        font-size: 1.3rem;
+
+    }
+    .background-strip p {
+        font-size: .7rem;
+    }
+
+
+    .more-info a{
+        font-size:.8rem;
+    }
+    .more-info li{
+        margin-bottom:10px;
+    }
+}
+/*------------------------------------
+                    main menu small screen
+
+---------------------------------------------*/
+
+@media (max-width: 753px) {
 
     .nav-top {
         display: none;
+    }
+
+
+    label {
+        display: inline-block;
+        position: absolute;
+        top:50%;
+        right: 10px;
+    }
+
+     input:checked ~ .nav-top {
+         position: static;
+         position: absolute;
+         top: 66px;
+         left: 0;
+         display: block;
+         background-color: #fff;
+         margin: 0;
+         padding: 0;
+         width:100%;
+         /*height:70vh;*/
+
+        overflow: visible;
+         
+    }
+
+    input:checked ~ .nav-top  {
+        overflow: auto;
+        height:100vh;
+        /*border: 1px solid red;*/
+    }
+    input:checked ~ .nav-top  li {
+        float: none;
+        background-color: #fff;
+
+        /*overflow: hidden;*/
+        display: block;
+        padding-left: 20px;
+        padding-bottom: 1px;
+        /*background: linear-gradient(white, grey);*/
+        /*border:1px solid #b8b8b8;*/
+
+    }
+
+    /*input:checked ~ .nav-top  li:hover .sub-menu{*/
+        /*display: block;*/
+    /*}*/
+
+    /*input:checked ~ .nav-top  li .sub-menu li:hover ul{*/
+        /*display: block;*/
+
+    /*}*/
+    /*input:checked ~ .nav-top .extract::after{*/
+        /*content: '>>';*/
+    /*}*/
+
+    .nav-top {
+        /*transform: scale(.6);*/
+        font-size: .9rem;
+
+    }
+    input:checked ~ .nav-top  .sub-menu,
+    input:checked ~ .nav-top  .sub-menu ul{
+        position: static;
+        /*float: none;*/
+        /*display: none;*/
+        opacity: 1;
+        height:100%;
+        width: 100%;
+        overflow: visible;
+        background-color: #fff;
+        font-size: .9rem;
+        padding-left: 20px;
+        list-style: none;
+    }
+
+    input:checked ~ .nav-top li a {
+        display: inline-block;
+        width:100%;
+
+    }
+
+    input:checked ~ .nav-top a:hover {
+        color: #F14848;
+        background-color: #fff;
+
     }
 
 }
