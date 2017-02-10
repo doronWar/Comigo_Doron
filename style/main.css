@@ -277,7 +277,8 @@ nav > a > img {
 
     display: block;
     list-style-type: none;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+
 }
 
 .more-info a {
@@ -285,6 +286,7 @@ nav > a > img {
     display: inline-block;
     width: 35%; /*500px*/
     padding: 5px 5px;
+    /*border: 1px solid red;*/
 
 
 }
@@ -330,6 +332,38 @@ nav > a > img {
     /*margin-right: 0;*/
 
 }
+
+
+/*------------------------------------getting figure to always disply-----------------------------------------*/
+
+.more-info li:nth-child(6) a ~ figure {
+    display: inline-block;
+    text-align: center;
+}
+
+
+.more-info li:nth-child(6) a ~ figure img {
+    width: 85%;
+}
+
+.more-info li:nth-child(6) a ~ figure figcaption {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+
+.more-info li:hover ~ li:nth-child(6) figure {
+    display: none;
+
+    /*border: 1px solid red;*/
+}
+/*----------------------------------------*/
+
 
 .background-strip > div {
     width: 13%;
@@ -582,6 +616,7 @@ nav > a > img {
     position: relative;
 
 
+
     /*clear: both;*/
 }
 
@@ -630,7 +665,7 @@ nav > a > img {
 
 .blog-strip li {
     height: 38.8vw;
-    width: 16.6%;
+    width: 16.666%;
     display: inline-block;
     float: left;
 
@@ -639,7 +674,7 @@ nav > a > img {
 /*text in blogs*/
 .blog-strip li span:nth-of-type(1) {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     width: 100%;
     height: 52px;
 
@@ -740,11 +775,12 @@ nav > a > img {
     background: #1E2024;
     /*text-align: center;*/
     width: 100%;
-    height: 19.4vw;
+    height: 21.4vw;
     padding-left: 0;
     padding-top: 0;
-    padding-bottom: 40px;
+    /*padding-bottom: 20px;*/
     margin-left: 0;
+
     /*clear: both;*/
     /*position: relative;*/
 
@@ -753,16 +789,17 @@ nav > a > img {
 .footer-a-background > a:last-child {
     float: right;
     margin-right: 100px;
+
     /*margin-top: 40px;*/
 }
 
 .menu-footer-font {
     /*display: inline-block;*/
     width: 75%;
-    margin-top: 0;
+    /*margin-top: 0;*/
     margin-left: 0;
-    /*margin-top: 40px;*/
-    /*border: 1px solid red;*/
+    margin-top: 40px;
+
 }
 
 .menu-footer-font > li {
@@ -822,7 +859,7 @@ nav > a > img {
 
 .footer-b-background {
     background: #151515;
-    height: 12vh;
+    height: 8vh;
     text-align: center;
 
 
@@ -1058,6 +1095,8 @@ label{
         width: 80%;
 
     }
+
+
 }
 
 
@@ -1134,6 +1173,45 @@ label{
     /*}*/
 
 
+
+    /*!*!*----------------------------------------------footer------------------------------------------------------*!*!*/
+
+
+    .social-media.buttom-links li a {
+        font-size: .6rem ;
+
+
+
+    }
+    .footer-b-background p:last-child,
+    .footer-b-background p:last-child a {
+    font-size: .6rem;
+
+    }
+
+    .buisness-links a {
+        display: inline-block;
+        font-size: .6rem;
+    }
+
+    small {
+        font-size: .8rem;
+        margin-top: 5px;
+    }
+    .menu-footer-font > li,
+    .menu-footer-font > li ul > li{
+        height: 20px;
+    }
+    .menu-footer-font > li > a,
+    .menu-footer-font > li ul > li a{
+        font-size: .7rem;
+
+    }
+
+
+
+
+
 }
 
 
@@ -1206,23 +1284,34 @@ label{
     /*!*!*----------------------------------------------footer------------------------------------------------------*!*!*/
 
 
-    /*.social-media.buttom-links li a {*/
-        /*font-size: .5rem ;*/
-    /*}*/
-    /*.footer-b-background p:last-child,*/
-    /*.footer-b-background p:last-child a {*/
-        /*font-size: .6rem;*/
-    /*}*/
+    .social-media.buttom-links li a {
+        font-size: .5rem ;
+        border: 1px solid red;
+    }
+    .footer-b-background p:last-child,
+    .footer-b-background p:last-child a {
+        font-size: .1rem;
 
-    /*.buisness-links a {*/
-        /*display: inline-block;*/
-        /*font-size: .6rem;*/
-    /*}*/
+    }
 
-    /*small {*/
-        /*font-size: .8rem;*/
-        /*margin-top: 5px;*/
-    /*}*/
+    .buisness-links a {
+        display: inline-block;
+        font-size: .6rem;
+    }
+
+    small {
+        font-size: .8rem;
+        margin-top: 5px;
+    }
+    .menu-footer-font > li,
+    .menu-footer-font > li ul > li{
+        height: 20px;
+    }
+    .menu-footer-font > li > a,
+    .menu-footer-font > li ul > li a{
+        font-size: .7rem;
+
+    }
 
 
 }
@@ -1614,6 +1703,109 @@ label{
         font-size: 1.7rem;
     }
 
+
+
+
+    /*!*!*----------------------------------------------footer------------------------------------------------------*!*!*/
+
+
+
+    .footer-a-background > a:last-child {
+        float: right;
+        margin-right: 30px;
+
+        /*margin-top: 40px;*/
+    }
+    .menu-footer-font {
+        margin-top: 10px;
+
+    }
+
+    .menu-footer-font > li {
+
+
+        height:30px;
+
+
+    }
+
+    .menu-footer-font > li ul {
+        padding-top: 0;
+    }
+
+    .menu-footer-font > li,
+    .menu-footer-font > li ul > li{
+        height: 20px;
+
+        text-align: center;
+
+        /*padding-top: 10px;*/
+    }
+    .menu-footer-font > li > a,
+    .menu-footer-font > li ul > li a{
+        font-size: .7rem;
+        padding-top: 0;
+
+        /*height:10px;*/
+
+    }
+
+
+
+
+
+
+    .footer-b-background {
+        position: relative;
+    }
+    .social-media.buttom-links{
+    position: absolute;
+    top:6px;
+    left: 0;
+    }
+    .social-media.buttom-links li a {
+        font-size: .5rem ;
+
+
+    }
+    .footer-b-background p:last-child{
+        font-size: .6rem;
+        position: absolute;
+        bottom:7px;
+        left: 7%;
+
+    }
+    .footer-b-background p:last-child > a {
+        font-size: .6rem;
+        /*position: absolute;*/
+        /*bottom:0;*/
+        /*left: 140px;*/
+        border: 1px solid red;
+    }
+
+    .buisness-links{
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+
+
+    }
+    .buisness-links a {
+        display: inline-block;
+        font-size: .6rem;
+
+    }
+
+    small {
+        font-size: .8rem;
+        margin-top: 5px;
+        position: absolute;
+        top: 15px;
+        left: 40px;
+
+    }
+
+
 }
 
 @media (max-width: 556px) {
@@ -1950,7 +2142,7 @@ label{
     .blog-strip {
         /*z-index: 10;*/
         position: static;
-        height:351vw;
+        height:549vw;
 
     }
 
@@ -2014,6 +2206,156 @@ label{
         transform: translateY(0);
 
     }
+
+/*---------------------------------------------foote menus----------------------------------------------*/
+
+
+    /*!*!*----------------------------------------------footer------------------------------------------------------*!*!*/
+
+    .footer-a-background {
+        height:15vh;
+    }
+
+    .footer-a-background > a:last-child {
+        float: right;
+        margin-right: 0;
+
+        /*margin-top: 40px;*/
+    }
+    .menu-footer-font {
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    .menu-footer-font > li {
+        height:30px;
+        margin-left:10px;
+    }
+
+    .menu-footer-font > li ul {
+        padding-top: 0;
+    }
+
+    .menu-footer-font > li,
+    .menu-footer-font > li ul > li{
+        height: 20px;
+
+        text-align: center;
+
+        /*padding-top: 10px;*/
+    }
+    .menu-footer-font > li > a,
+    .menu-footer-font > li ul > li a{
+        font-size: .7rem;
+        padding-top: 0;
+
+        /*height:10px;*/
+
+    }
+
+
+
+
+
+
+    .footer-b-background {
+        position: relative;
+    }
+    .social-media.buttom-links{
+        position: absolute;
+        top:6px;
+        left: 0;
+    }
+    .social-media.buttom-links li a {
+        font-size: .5rem ;
+
+
+    }
+    .footer-b-background p:last-child{
+        font-size: .6rem;
+        position: absolute;
+        bottom:7px;
+        left: 7%;
+
+    }
+    .footer-b-background p:last-child > a {
+        font-size: .6rem;
+        /*position: absolute;*/
+        /*bottom:0;*/
+        /*left: 140px;*/
+        border: 1px solid red;
+    }
+
+    .buisness-links{
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+
+
+    }
+    .buisness-links a {
+        display: inline-block;
+        font-size: .6rem;
+
+    }
+
+    small {
+        font-size: .8rem;
+        margin-top: 5px;
+        position: absolute;
+        top: 15px;
+        left: 40px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*.social-media.buttom-links li a {*/
+        /*font-size: .5rem ;*/
+        /*border: 1px solid red;*/
+    /*}*/
+    /*.footer-b-background p:last-child,*/
+    /*.footer-b-background p:last-child a {*/
+        /*font-size: .1rem;*/
+
+    /*}*/
+
+    /*.buisness-links a {*/
+        /*display: inline-block;*/
+        /*font-size: .6rem;*/
+    /*}*/
+
+    /*small {*/
+        /*font-size: .8rem;*/
+        /*margin-top: 5px;*/
+    /*}*/
+    /*.menu-footer-font > li,*/
+    /*.menu-footer-font > li ul > li{*/
+        /*height: 20px;*/
+    /*}*/
+    /*.menu-footer-font > li > a,*/
+    /*.menu-footer-font > li ul > li a{*/
+        /*font-size: .7rem;*/
+
+    /*}*/
 }
 
 
