@@ -252,6 +252,8 @@ nav > a > img {
 
     /*display: inline-block;*/
     /*float:right;*/
+    overflow:hidden;
+    background-color: rgba(0,0,0, 0.5);
 }
 
 .background-strip h2 {
@@ -314,23 +316,29 @@ nav > a > img {
     left: 0;
     height:140%;
     width:auto;
-    border: 1px solid red;
-    background: rgba( 0,0,0,0.5);
+    mix-blend-mode: screen;
+    background-color: black;
     z-index: -10;
+    display:none;
+
 }
 
+.more-info li:hover figure ~ video {
+    display: initial;
+}
 
-.more-info a:hover ~ figure {
+.more-info li:hover  figure {
     display: inline-block;
     text-align: center;
+    height: 100%;
 }
 
-.more-info a:hover ~ figure img {
+.more-info li:hover figure img {
     width: 85%;
     /*height:34%;*/
 }
 
-.more-info a:hover ~ figure figcaption {
+.more-info li:hover figure figcaption {
     text-align: center;
     color: #fff;
     position: absolute;
@@ -344,13 +352,16 @@ nav > a > img {
 
 
 
-/*------------------------------------getting figure to always disply-----------------------------------------*/
+/*------------------------------------getting figure  & video to always disply-----------------------------------------*/
 
 .more-info li:nth-child(6) a ~ figure {
     display: inline-block;
     text-align: center;
 }
 
+.more-info li:nth-child(6) a ~ video {
+    display: initial;
+}
 
 .more-info li:nth-child(6) a ~ figure img {
     width: 85%;
@@ -366,11 +377,14 @@ nav > a > img {
     width: 100%;
 }
 
+/*to get the defualt video & figure to stop playing */
 
 .more-info li:hover ~ li:nth-child(6) figure {
     display: none;
+}
 
-    /*border: 1px solid red;*/
+.more-info li:hover ~ li:nth-child(6) video{
+    display: none;
 }
 /*----------------------------------------*/
 
@@ -627,6 +641,7 @@ nav > a > img {
 
 
 
+
     /*clear: both;*/
 }
 
@@ -757,11 +772,13 @@ nav > a > img {
     transform: scale(1.1);
     z-index: 20;
 
+
 }
 
 .blog-strip li:nth-of-type(2) > a {
     background: url(../assets/blog/ibc_post_EI-750x508.png);
 }
+/* one way to get screen darker: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),*/
 
 .blog-strip li:nth-of-type(3) > a {
     background-image: url(../assets/blog/IMG_9294-750x563.jpeg);
