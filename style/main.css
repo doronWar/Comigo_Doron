@@ -242,13 +242,13 @@ nav > a > img {
 .background-strip {
     width: 100%;
     height: 39.9vw;
-    background-image: url("../assets/videos/video-action-thriller-750x422.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-image: url("../assets/videos/video-action-thriller-750x422.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
     position: relative;
     /*z-index: -100;*/
     /*padding-top:40px;*/
-    position: relative;
+    /*position: relative;*/
 
     /*display: inline-block;*/
     /*float:right;*/
@@ -278,7 +278,7 @@ nav > a > img {
     display: block;
     list-style-type: none;
     padding-bottom: 20px;
-
+    background-color: rgba(0,0,0);
 }
 
 .more-info a {
@@ -304,11 +304,21 @@ nav > a > img {
 
     /*margin: 0 auto;*/
     display: none;
-
-
     /*float: right;*/
-
 }
+
+
+.background-strip video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:140%;
+    width:auto;
+    border: 1px solid red;
+    background: rgba( 0,0,0,0.5);
+    z-index: -10;
+}
+
 
 .more-info a:hover ~ figure {
     display: inline-block;
@@ -330,8 +340,8 @@ nav > a > img {
     width: 100%; /*500px;*/
     /*margin-bottom: 20px;*/
     /*margin-right: 0;*/
-
 }
+
 
 
 /*------------------------------------getting figure to always disply-----------------------------------------*/
