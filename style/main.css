@@ -94,8 +94,7 @@ figcaption::first-letter {
 
 /*-----------------------------submenues (links)---------------------------*/
 
-
-.sub-menu{
+.sub-menu {
     font-size: 2.4rem; /*2.4em;*/
     font-weight: 300;
     line-height: 3em;
@@ -117,7 +116,7 @@ figcaption::first-letter {
 .sub-menu ul {
     /*display: none;*/
     position: absolute;
-    top:140px;
+    top: 140px;
     left: 0;
     height: 0;
 
@@ -171,15 +170,12 @@ nav > a > img {
 
 /*menu style*/
 
-
 /*.sub-menu*/
 /*{*/
 /*opacity: 0;*/
 /*transition-property: opacity;*/
 /*transition-duration: 1s;*/
 /*}*/
-
-
 
 /*-----------------------------welcom strip----------------------------*/
 
@@ -207,7 +203,7 @@ nav > a > img {
 }
 
 .welcoming-strip h2 {
-    font-size:  3.5rem;  /*5vw;*/
+    font-size: 3.5rem; /*5vw;*/
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 0;
@@ -252,8 +248,8 @@ nav > a > img {
 
     /*display: inline-block;*/
     /*float:right;*/
-    overflow:hidden;
-    background-color: rgba(0,0,0, 0.5);
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .background-strip h2 {
@@ -269,10 +265,13 @@ nav > a > img {
 }
 
 .more-info {
+    position: absolute;
+    top: 0;
+    left: 35%;
     display: inline-block;
     padding-top: 40px;
-    width: 50%;
-
+    width: 70%;
+    /*border: 1px solid red;*/
 }
 
 .more-info li {
@@ -280,16 +279,18 @@ nav > a > img {
     display: block;
     list-style-type: none;
     padding-bottom: 20px;
+    width: 30%;
+    /*padding-bottom:5%;*/
+    /*border: 1px solid white;*/
     /*background-color: rgba(0,0,0);*/
 }
 
 .more-info a {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     display: inline-block;
     width: 35%; /*500px*/
     padding: 5px 5px;
     /*border: 1px solid red;*/
-
 
 }
 
@@ -298,8 +299,8 @@ nav > a > img {
     font-weight: 100;
     color: #606060;
     position: absolute;
-    right: 0;
-    top: 15%;
+    right: 20%;
+    top: 25%;
     /*display: inline-block;*/
 
     margin: 0;
@@ -309,25 +310,28 @@ nav > a > img {
     /*float: right;*/
 }
 
-
 .background-strip video {
     position: absolute;
-    top: 0;
-    left: 0;
-    height:140%;
-    width:auto;
+    top: -4%;
+    left: -50%;
+    /*height:220%;*/
+    width: 100vw;
     /*mix-blend-mode: screen;*/
     /*background-color: black;*/
     z-index: -10;
-    display:none;
+    display: none;
+    /*opacity: 0;*/
+    /*transition: opacity;*/
+    /*transition-duration: 1.5;*/
 
 }
 
 .more-info li:hover figure ~ video {
     display: initial;
+    /*opacity: 1;*/
 }
 
-.more-info li:hover  figure {
+.more-info li:hover figure {
     display: inline-block;
     text-align: center;
     height: 100%;
@@ -349,8 +353,6 @@ nav > a > img {
     /*margin-bottom: 20px;*/
     /*margin-right: 0;*/
 }
-
-
 
 /*------------------------------------getting figure  & video to always disply-----------------------------------------*/
 
@@ -383,11 +385,11 @@ nav > a > img {
     display: none;
 }
 
-.more-info li:hover ~ li:nth-child(6) video{
+.more-info li:hover ~ li:nth-child(6) video {
     display: none;
 }
-/*----------------------------------------*/
 
+/*----------------------------------------*/
 
 .background-strip > div {
     width: 13%;
@@ -502,6 +504,7 @@ nav > a > img {
 }
 
 .learn-more a {
+    position: relative;
     display: inline-block;
     float: right;
     width: 34%;
@@ -510,8 +513,49 @@ nav > a > img {
     color: #fff;
     text-align: center;
     padding-top: 33%;
+    /*border: 1px solid black;*/
 }
 
+#corenr {
+    position: absolute;
+    top: -2%;
+    display: block;
+    /*bottom: 85%;*/
+    right: 1.5%;
+    /*left:80%;*/
+    border-bottom: 30px solid #C04444;
+    border-left: 10px solid white;
+    border-right: 10px solid transparent;
+    transform: rotate(90deg);
+    height: 0;
+    width: 0;
+    transition: border;
+    transition-duration: .4s;
+    /*background-color: #fff;*/
+}
+
+.learn-more a:hover #corenr {
+    border-left: 40px solid white;
+    border-bottom: 60px solid #C04444;
+    /*top:0;*/
+    /*right: -9%;*/
+    /*transform: rotate(-90deg);*/
+
+
+    /*height: 40px;*/
+    /*width: 40px;*/
+    /*background-color: #C04444;*/
+}
+
+#shape{
+    position: absolute;
+    top:25%;
+    left: 25%;
+    border: 1px solid white;
+    border-radius: 5vw;
+    width: 10vw;
+    height:10vw;
+}
 .demo {
     float: right;
     display: inline-block;
@@ -539,6 +583,7 @@ nav > a > img {
 .big .demo > a {
     font-size: 6vw; /*5em ; */
     color: #464646;
+
 
 }
 
@@ -639,9 +684,6 @@ nav > a > img {
 .blog-strip ul {
     position: relative;
 
-
-
-
     /*clear: both;*/
 }
 
@@ -652,7 +694,7 @@ nav > a > img {
 .blog-strip .blog-title {
     position: absolute;
     /*top: 63%;*/
-    bottom:0;
+    bottom: 0;
     padding-left: 20px;
     height: 185px;
     color: #fff;
@@ -669,14 +711,14 @@ nav > a > img {
     margin-bottom: 0;
     font-weight: 300;
 
-
 }
+
 /*.blog-strip h2 {*/
-    /*font-size: 2.4rem;*/
-    /*font-weight: 300;*/
-    /*margin-bottom: 0;*/
-    /*border: 1px solid blue;*/
-    /*!*margin-top:51vh;*!*/
+/*font-size: 2.4rem;*/
+/*font-weight: 300;*/
+/*margin-bottom: 0;*/
+/*border: 1px solid blue;*/
+/*!*margin-top:51vh;*!*/
 /*}*/
 
 /*blog layout*/
@@ -743,7 +785,7 @@ nav > a > img {
 
 /*true to all links in blogs*/
 
-.blog-strip > ul > li:nth-child(1n+2){
+.blog-strip > ul > li:nth-child(1n+2) {
     background-position: center center;
     background-size: cover;
     /*border: 1px solid black;*/
@@ -758,18 +800,15 @@ nav > a > img {
     z-index: 20;
 }
 
-
 .blog-strip > ul > li:nth-child(1n+2) a {
     display: block;
     height: 100%;
-    background-color: rgba(0,0,0, .3);
+    background-color: rgba(0, 0, 0, .3);
     color: #fff;
     font-size: 1rem;
 
     /*font-family: "open snas", "sans-serif";*/
 }
-
-
 
 .blog-strip a:hover {
     color: #fff;
@@ -788,29 +827,29 @@ nav > a > img {
 .blog-strip li:nth-of-type(1n+2) > a:hover {
     transform: scale(1.1);
     z-index: 20;
-    background-color: rgba(0,0,0, 0);
-
+    background-color: rgba(0, 0, 0, 0);
 
 }
 
-.blog-strip li:nth-of-type(2)  {
+.blog-strip li:nth-of-type(2) {
     background: url(../assets/blog/ibc_post_EI-750x508.png);
 }
+
 /* one way to get screen darker: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),*/
 
-.blog-strip li:nth-of-type(3)  {
+.blog-strip li:nth-of-type(3) {
     background-image: url(../assets/blog/IMG_9294-750x563.jpeg);
 }
 
-.blog-strip li:nth-of-type(4)  {
+.blog-strip li:nth-of-type(4) {
     background-image: url(../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg);
 }
 
-.blog-strip li:nth-of-type(5)  {
+.blog-strip li:nth-of-type(5) {
     background-image: url(../assets/blog/post_tv_connect-750x508.jpeg);
 }
 
-.blog-strip li:nth-of-type(6)  {
+.blog-strip li:nth-of-type(6) {
     background-image: url(../assets/blog/post_quality-750x508.jpeg);
 }
 
@@ -854,8 +893,7 @@ nav > a > img {
     margin-left: 20px;
     width: 25%;
     float: left;
-    height:40px;
-
+    height: 40px;
 
 }
 
@@ -878,14 +916,14 @@ nav > a > img {
     /*float: left;*/
     list-style-type: none;
     padding-top: 10px;
-    padding-left:0;
+    padding-left: 0;
     text-align: center;
     /*padding: 0;*/
 }
 
 .menu-footer-font > li ul > li {
     width: 100%;
-    height:30px;
+    height: 30px;
     text-align: left;
 
 }
@@ -906,7 +944,6 @@ nav > a > img {
     background: #151515;
     height: 8vh;
     text-align: center;
-
 
 }
 
@@ -964,8 +1001,9 @@ small {
 
 .social-media.buttom-links li a {
     display: inline-block;
-    font-size: .7rem ;
+    font-size: .7rem;
 }
+
 .footer-b-background p:last-child,
 .footer-b-background p:last-child a {
     display: inline;
@@ -991,10 +1029,9 @@ h3 {
 /*----------------------------relative sizing------------------------------*/
 
 #menubutton,
-label{
-   display: none;
-   }
-
+label {
+    display: none;
+}
 
 /*
 
@@ -1009,12 +1046,12 @@ label{
     }
 }
 
-
 @media (max-width: 934px) and (min-width: 753px) {
 
     .social-media.buttom-links li a {
-        font-size: .5rem ;
+        font-size: .5rem;
     }
+
     .footer-b-background p:last-child,
     .footer-b-background p:last-child a {
         font-size: .6rem;
@@ -1031,7 +1068,6 @@ label{
     }
 
 }
-
 
 @media (min-width: 754px) {
 
@@ -1060,8 +1096,6 @@ label{
         height: 100%;
     }
 
-
-
     .nav-links > li:hover > ul {
         /*position: absolute;*/
         /*display: inline-block;*/
@@ -1083,7 +1117,6 @@ label{
         width: 33.3%;
         height: 140px;
 
-
         /*height: 10vw;*/
 
     }
@@ -1101,7 +1134,6 @@ label{
     }
 
     /*need to center the line!!!!!!!*/
-
     .nav-links > li > ul > li:hover ul {
         position: absolute;
         top: 100%;
@@ -1141,96 +1173,86 @@ label{
 
     }
 
-
 }
 
-
-
-
-
-
-
-
-@media (min-width: 895px) and (max-width: 1149px){
-
-
+@media (min-width: 895px) and (max-width: 1149px) {
 
     /*--------------------------engage strip resizing---------------------*/
-
     .background-strip h2 {
         font-size: 1.6rem;
         margin-bottom: 0;
     }
+
     .background-strip p {
         font-size: .8rem;
         margin-top: 5px;
     }
 
     .background-strip > div {
-    width:18%;
+        width: 18%;
     }
 
-    .more-info a{
-        font-size:1rem;
-    }
-    .more-info li{
-        margin-bottom:10px;
+    .more-info a {
+        font-size: 1rem;
     }
 
-    .more-info a:hover ~ figure  {
-        width: 30%;
-        top:23%
+    .more-info li {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .more-info figure {
+        width: 35%;
+        top: 23%
         /*height:34%;*/
     }
-    .more-info a:hover ~ figure figcaption {
-        top:-70px;
+
+    .more-info li:nth-child(2) figure {
+        width: 45%;
+        /*border: 1px solid red;*/
     }
 
+    .more-info a:hover ~ figure figcaption {
+        top: -70px;
+    }
 
-
+    /*.more-info li:nth-child(6) a ~ figure img {*/
+    /*width: 30%;*/
+    /*}*/
     /*--------------------------half strip resizing---------------------*/
-
     .half-strip *:nth-child(1) {
-        margin-top:40%;
-        height:82px;
+        margin-top: 40%;
+        height: 82px;
     }
 
     .inhance {
         background-size: 40%, auto, cover;
 
     }
+
     .delpoy {
         background-size: 30%, auto, cover;
     }
 
     /*--------------------------blog strip resizing---------------------*/
-
-
     .blog-strip .blog-title h2 {
         font-size: 2rem;
         padding-top: 50%;
     }
 
     /*.blog-strip .blog-title {*/
-        /*position: absolute;*/
-        /*top: 67%;*/
-
+    /*position: absolute;*/
+    /*top: 67%;*/
     /*}*/
-
-
-
     /*!*!*----------------------------------------------footer------------------------------------------------------*!*!*/
-
-
     .social-media.buttom-links li a {
-        font-size: .6rem ;
-
-
+        font-size: .6rem;
 
     }
+
     .footer-b-background p:last-child,
     .footer-b-background p:last-child a {
-    font-size: .6rem;
+        font-size: .6rem;
 
     }
 
@@ -1243,96 +1265,108 @@ label{
         font-size: .8rem;
         margin-top: 5px;
     }
+
     .menu-footer-font > li,
-    .menu-footer-font > li ul > li{
+    .menu-footer-font > li ul > li {
         height: 20px;
     }
+
     .menu-footer-font > li > a,
-    .menu-footer-font > li ul > li a{
+    .menu-footer-font > li ul > li a {
         font-size: .7rem;
 
     }
 
-
-
-
-
 }
 
-
-
-
-
-@media (min-width: 753px) and (max-width: 894px){
+@media (min-width: 753px) and (max-width: 894px) {
 
     /*--------------------------engage strip resizing---------------------*/
+    /*.more-info a:hover ~ figure {*/
+    /*width: 35%;*/
+    /*top:40%;*/
+    /*!*height:34%;*!*/
+    /*}*/
+    .more-info a:hover ~ figure figcaption {
+        width: 150%;
+        top: -80px;
+        right: -50px;
+        /*border: 1px solid red;*/
+    }
 
+    .more-info li:nth-child(6) a ~ figure figcaption {
+        top: -80px;
+        right: -50px;
+        width: 150%;
+        /*border: 1px solid red;*/
+    }
 
-    .more-info a:hover ~ figure {
-        width: 25%;
-        top:40%;
+    .more-info a {
+        height: 100%;
+        padding-bottom: 10px;
+
+    }
+
+    .more-info figure {
+        width: 35%;
+        top: 33%
         /*height:34%;*/
     }
-    .more-info a:hover ~ figure figcaption {
-        top:-120px;
+
+    .more-info li:nth-child(2) figure {
+        width: 35%;
+        /*border: 1px solid red;*/
     }
-
-
 
     .background-strip h2 {
         font-size: 1.3rem;
 
     }
+
     .background-strip p {
         font-size: .7rem;
     }
 
-
-    .more-info a{
-        font-size:.8rem;
+    .more-info a {
+        font-size: .8rem;
     }
-    .more-info li{
-        margin-bottom:10px;
+
+    .more-info li {
+        /*margin-bottom:0;*/
+        padding-bottom: 0;
     }
 
     /*--------------------------half strip resizing---------------------*/
-
     .half-strip *:nth-child(1) {
-        margin-top:30%;
-        height:82px;
+        margin-top: 30%;
+        height: 82px;
     }
 
     .inhance {
         background-size: 30%, auto, cover;
 
     }
+
     .delpoy {
         background-size: 20%, auto, cover;
     }
 
-
     /*--------------------------blog strip resizing---------------------*/
-
-
     .blog-strip .blog-title h2 {
         font-size: 1.8rem;
         padding-top: 65%;
     }
-    .blog-strip li a:hover span:nth-of-type(2){
+
+    .blog-strip li a:hover span:nth-of-type(2) {
         font-size: .7rem;
     }
 
-
-
-
-
     /*!*!*----------------------------------------------footer------------------------------------------------------*!*!*/
-
-
     .social-media.buttom-links li a {
-        font-size: .5rem ;
+        font-size: .5rem;
         border: 1px solid red;
     }
+
     .footer-b-background p:last-child,
     .footer-b-background p:last-child a {
         font-size: .1rem;
@@ -1348,22 +1382,19 @@ label{
         font-size: .8rem;
         margin-top: 5px;
     }
+
     .menu-footer-font > li,
-    .menu-footer-font > li ul > li{
+    .menu-footer-font > li ul > li {
         height: 20px;
     }
+
     .menu-footer-font > li > a,
-    .menu-footer-font > li ul > li a{
+    .menu-footer-font > li ul > li a {
         font-size: .7rem;
 
     }
 
-
 }
-
-
-
-
 
 /*------------------------------------
                     main menu small screen
@@ -1376,36 +1407,36 @@ label{
         display: none;
     }
 
-
     label {
         display: inline-block;
         position: absolute;
-        top:50%;
+        top: 50%;
         right: 10px;
     }
 
-     input:checked ~ .nav-top {
-         position: static;
-         position: absolute;
-         top: 66px;
-         left: 0;
-         display: block;
-         background-color: #fff;
-         margin: 0;
-         padding: 0;
-         width:100%;
-         /*height:70vh;*/
+    input:checked ~ .nav-top {
+        position: static;
+        position: absolute;
+        top: 66px;
+        left: 0;
+        display: block;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        /*height:70vh;*/
 
         overflow: visible;
-         
+
     }
 
-    input:checked ~ .nav-top  {
+    input:checked ~ .nav-top {
         overflow: auto;
-        height:calc(100vh - 66px);
+        height: calc(100vh - 66px);
         /*border: 1px solid red;*/
     }
-    input:checked ~ .nav-top  li {
+
+    input:checked ~ .nav-top li {
         float: none;
         background-color: #fff;
 
@@ -1419,29 +1450,27 @@ label{
     }
 
     /*input:checked ~ .nav-top  li:hover .sub-menu{*/
-        /*display: block;*/
+    /*display: block;*/
     /*}*/
-
     /*input:checked ~ .nav-top  li .sub-menu li:hover ul{*/
-        /*display: block;*/
-
+    /*display: block;*/
     /*}*/
     /*input:checked ~ .nav-top .extract::after{*/
-        /*content: '>>';*/
+    /*content: '>>';*/
     /*}*/
-
     .nav-top {
         /*transform: scale(.6);*/
         font-size: .9rem;
 
     }
-    input:checked ~ .nav-top  .sub-menu,
-    input:checked ~ .nav-top  .sub-menu ul{
+
+    input:checked ~ .nav-top .sub-menu,
+    input:checked ~ .nav-top .sub-menu ul {
         position: static;
         /*float: none;*/
         /*display: none;*/
         opacity: 1;
-        height:100%;
+        height: 100%;
         width: 100%;
         overflow: visible;
         background-color: #fff;
@@ -1452,7 +1481,7 @@ label{
 
     input:checked ~ .nav-top li a {
         display: inline-block;
-        width:100%;
+        width: 100%;
 
     }
 
@@ -1462,10 +1491,7 @@ label{
 
     }
 
-
     /* ---------------------------buttons--------------------------*/
-
-
     .btn,
     .btn:hover,
     .btn:visited {
@@ -1473,27 +1499,24 @@ label{
     }
 
     /*-----------------------------welcom strip----------------------------*/
-
     .welcoming-strip {
-        height:96vw;
+        height: 96vw;
         background-size: auto;
         background-position: center;
-        padding-top:15%;
+        padding-top: 15%;
     }
 
     .welcoming-strip h1 {
         font-size: 3.2rem;
         margin-bottom: 5%;
     }
+
     .welcoming-strip h2 {
         font-size: 4.5rem;
         margin-bottom: 5%;
     }
 
-
     /*----------------------------why comigo------------------------------*/
-
-
     .white-strip h2 {
         font-size: 1.8rem;
     }
@@ -1503,12 +1526,10 @@ label{
     }
 
     /*-----------------------engage viewers srtip--------------------------*/
-
     .background-strip {
-        height:106vw;
+        height: 106vw;
 
     }
-
 
     .background-strip h2 {
         font-size: 2rem;
@@ -1532,11 +1553,11 @@ label{
         /*top:30%;*/
         /*left:0;*/
         display: block;
-        height:5%;
+        height: 5%;
         padding-top: 0;
         width: 80%;
         margin: auto;
-        border: 1px solid red;
+        /*border: 1px solid red;*/
 
     }
 
@@ -1544,7 +1565,8 @@ label{
         float: left;
         /*display: inline-block;*/
         list-style-type: none;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
+
     }
 
     .more-info a {
@@ -1553,34 +1575,50 @@ label{
         width: 100%; /*500px*/
     }
 
-    .background-strip figure {
-        top: 50%;
-        right: 20%;
+    .background-strip video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /*height: 200%;*/
+        width: 200vw;
+        border: 1px solid red;
     }
 
-    .more-info a:hover ~ figure img {
+    .background-strip li:nth-child(1) figure {
+        top: 63%;
+        right: 40%;
+        width: 30%;
+    }
+
+    .background-strip figure {
+        top: 63%;
+        right: 0;
+        width: 100%;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    /*.more-info  figure img {*/
+    /*width: 0;*/
+    /*border: 1px solid red;*/
+    /*}*/
+    .more-info li:hover ~ figure img {
         width: 50%;
 
     }
 
-    .more-info a:hover ~ figure figcaption {
-    font-size: 1.1rem;
-    width: 80%; /*500px;*/
+    .more-info li:hover ~ figure figcaption {
+        font-size: 1.1rem;
+        width: 80%; /*500px;*/
     }
 
-
-
     /*-----------------------------half-strips-----------------------*/
-
     .half-strip {
         width: 100%;
         height: 91.4vw;
     }
 
-
-
     /*------------------------unique expirience strip---------------------------*/
-
     .white-strip.content {
         background-position: 50% 5%;
         height: 90vw;
@@ -1601,14 +1639,13 @@ label{
     }
 
     .white-strip.content a {
-        width:20%;
+        width: 20%;
         padding: 15px 10px;
         display: block;
         margin: 0 auto;
     }
 
     /*----------------------------floting boxes of demo--------------------------*/
-
     .big {
         height: 264vw;
         position: relative;
@@ -1625,11 +1662,10 @@ label{
         font-size: 6vw;
         width: 100%;
         padding-top: 15%;
-        padding-bottom:15%;
+        padding-bottom: 15%;
         display: block;
         text-align: center;
-     }
-
+    }
 
     .learn-more a {
         display: block;
@@ -1640,6 +1676,7 @@ label{
         border: 1px solid black;
 
     }
+
     .demo {
         display: block;
         width: 100%;
@@ -1673,7 +1710,7 @@ label{
         width: 60%;
         height: 50%;
         font-size: 1rem; /*1.5em*/
-        border:1px solid red;
+        border: 1px solid red;
     }
 
     .social-media.html-links li {
@@ -1690,7 +1727,6 @@ label{
         text-align: center;
     }
 
-
     .meeting:hover {
         box-shadow: 0 0 0 #ababab;
         transform: scale(1);
@@ -1698,30 +1734,29 @@ label{
 
     }
 
-
     /*--------------------------------------blog-----------------------------------*/
-
-
     .blog-strip {
         /*z-index: 10;*/
         position: static;
-        height:351vw;
+        height: 351vw;
 
     }
+
     .blog-strip li:nth-child(1) {
         height: 38.8vw;
         width: 100%;
         display: block;
         float: none;
-        margin-bottom:5%;
+        margin-bottom: 5%;
 
     }
+
     .blog-strip li:nth-child(1n +2) {
         height: 60vw;
         width: 100%;
         display: block;
         float: none;
-        margin-bottom:2%;
+        margin-bottom: 2%;
 
     }
 
@@ -1748,19 +1783,14 @@ label{
         font-size: 1.7rem;
     }
 
-
-
-
     /*!*!*----------------------------------------------footer------------------------------------------------------*!*!*/
-
-
-
     .footer-a-background > a:last-child {
         float: right;
         margin-right: 30px;
 
         /*margin-top: 40px;*/
     }
+
     .menu-footer-font {
         margin-top: 10px;
 
@@ -1768,9 +1798,7 @@ label{
 
     .menu-footer-font > li {
 
-
-        height:30px;
-
+        height: 30px;
 
     }
 
@@ -1779,15 +1807,16 @@ label{
     }
 
     .menu-footer-font > li,
-    .menu-footer-font > li ul > li{
+    .menu-footer-font > li ul > li {
         height: 20px;
 
         text-align: center;
 
         /*padding-top: 10px;*/
     }
+
     .menu-footer-font > li > a,
-    .menu-footer-font > li ul > li a{
+    .menu-footer-font > li ul > li a {
         font-size: .7rem;
         padding-top: 0;
 
@@ -1795,31 +1824,29 @@ label{
 
     }
 
-
-
-
-
-
     .footer-b-background {
         position: relative;
     }
-    .social-media.buttom-links{
-    position: absolute;
-    top:6px;
-    left: 0;
+
+    .social-media.buttom-links {
+        position: absolute;
+        top: 6px;
+        left: 0;
     }
+
     .social-media.buttom-links li a {
-        font-size: .5rem ;
-
+        font-size: .5rem;
 
     }
-    .footer-b-background p:last-child{
+
+    .footer-b-background p:last-child {
         font-size: .6rem;
         position: absolute;
-        bottom:7px;
+        bottom: 7px;
         left: 7%;
 
     }
+
     .footer-b-background p:last-child > a {
         font-size: .6rem;
         /*position: absolute;*/
@@ -1828,13 +1855,13 @@ label{
         border: 1px solid red;
     }
 
-    .buisness-links{
+    .buisness-links {
         position: absolute;
         bottom: -10px;
         left: 0;
 
-
     }
+
     .buisness-links a {
         display: inline-block;
         font-size: .6rem;
@@ -1850,21 +1877,18 @@ label{
 
     }
 
-
 }
 
 @media (max-width: 556px) {
-
 
     .nav-top {
         display: none;
     }
 
-
     label {
         display: inline-block;
         position: absolute;
-        top:50%;
+        top: 50%;
         right: 20px;
     }
 
@@ -1877,19 +1901,20 @@ label{
         background-color: #fff;
         margin: 0;
         padding: 0;
-        width:100%;
+        width: 100%;
         /*height:70vh;*/
 
         overflow: visible;
 
     }
 
-    input:checked ~ .nav-top  {
+    input:checked ~ .nav-top {
         overflow: auto;
-        height:calc(100vh - 66px);
+        height: calc(100vh - 66px);
         /*border: 1px solid red;*/
     }
-    input:checked ~ .nav-top  li {
+
+    input:checked ~ .nav-top li {
         float: none;
         background-color: #fff;
 
@@ -1904,11 +1929,12 @@ label{
         font-size: .9rem;
 
     }
-    input:checked ~ .nav-top  .sub-menu,
-    input:checked ~ .nav-top  .sub-menu ul{
+
+    input:checked ~ .nav-top .sub-menu,
+    input:checked ~ .nav-top .sub-menu ul {
         position: static;
         opacity: 0.98;
-        height:100%;
+        height: 100%;
         width: 100%;
         overflow: visible;
         background-color: #fff;
@@ -1919,7 +1945,7 @@ label{
 
     input:checked ~ .nav-top li a {
         display: inline-block;
-        width:100%;
+        width: 100%;
 
     }
 
@@ -1929,10 +1955,7 @@ label{
 
     }
 
-
     /* ---------------------------buttons--------------------------*/
-
-
     .btn,
     .btn:hover,
     .btn:visited {
@@ -1940,27 +1963,24 @@ label{
     }
 
     /*-----------------------------welcom strip----------------------------*/
-
     .welcoming-strip {
-        height:96vw;
+        height: 96vw;
         background-size: auto;
         background-position: center;
-        padding-top:15%;
+        padding-top: 15%;
     }
 
     .welcoming-strip h1 {
         font-size: 1rem;
         margin-bottom: 5%;
     }
+
     .welcoming-strip h2 {
         font-size: 3.5rem;
         margin-bottom: 5%;
     }
 
-
     /*----------------------------why comigo------------------------------*/
-
-
     .white-strip h2 {
         font-size: 1.6rem;
     }
@@ -1970,12 +1990,10 @@ label{
     }
 
     /*-----------------------engage viewers srtip--------------------------*/
-
     .background-strip {
-        height:206vw;
+        height: 136vw;
 
     }
-
 
     .background-strip h2 {
         font-size: 2rem;
@@ -2001,9 +2019,8 @@ label{
         display: block;
         padding-top: 0;
         width: 80%;
-        height:17%;
+        height: 17%;
         margin: auto;
-
 
     }
 
@@ -2011,38 +2028,52 @@ label{
         float: left;
         /*display: inline-block;*/
         list-style-type: none;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
+
     .more-info li:nth-child(1) {
-        padding-left:10px;
+        padding-left: 10px;
     }
+
     .more-info a {
         font-size: .7rem;
         display: inline-block;
         width: 100%; /*500px*/
     }
 
-    .background-strip figure {
-        top: 70%;
-        right: 10%;
-        padding-top:15%;
+    .background-strip video {
+        /*position: absolute;*/
+        top: 0;
+        left: 0;
+        /*height: 110%;*/
+        width: 245vw;
+
     }
 
-    .more-info a:hover ~ figure img {
+    .background-strip figure {
+        top: 63%;
+        right: 0;
+        width: 100%;
+        padding-left: 30%;
+        padding-right: 30%;
+
+        /*top: 70%;*/
+        /*right: 10%;*/
+        /*padding-top:15%;*/
+    }
+
+    .more-info li:hover ~ figure img {
         width: 60%;
         padding-left: 60px;
     }
 
-    .more-info a:hover ~ figure figcaption {
+    .more-info li:hover ~ figure figcaption {
         font-size: 1.1rem;
         width: 80%; /*500px;*/
 
     }
 
-
-
     /*-----------------------------half-strips-----------------------*/
-
     .half-strip {
         width: 100%;
         height: 120.4vw;
@@ -2052,14 +2083,12 @@ label{
         background-size: 40%, auto, cover;
 
     }
+
     .delpoy {
         background-size: 40%, auto, cover;
     }
 
-
-
     /*------------------------unique expirience strip---------------------------*/
-
     .white-strip.content {
         background-position: 50% 5%;
         height: 160vw;
@@ -2081,14 +2110,13 @@ label{
     }
 
     .white-strip.content a {
-        width:40%;
+        width: 40%;
         padding: 15px 10px;
         display: block;
         margin: 0 auto;
     }
 
     /*----------------------------floting boxes of demo--------------------------*/
-
     .big {
         height: 335vw;
         position: relative;
@@ -2105,7 +2133,7 @@ label{
         font-size: 6vw;
         width: 100%;
         padding-top: 15%;
-        padding-bottom:15%;
+        padding-bottom: 15%;
         display: block;
         text-align: center;
     }
@@ -2116,6 +2144,7 @@ label{
         padding-top: 15%;
         height: 55%;
     }
+
     .demo {
         display: block;
         width: 100%;
@@ -2127,11 +2156,10 @@ label{
     }
 
     /*.demo:hover {*/
-        /*transform: scale(1);*/
-        /*position: initial;*/
-        /*box-shadow: 0 0 0 black;*/
+    /*transform: scale(1);*/
+    /*position: initial;*/
+    /*box-shadow: 0 0 0 black;*/
     /*}*/
-
     .big .demo > a {
         font-size: 2.3rem; /*5em ; */
         color: #464646;
@@ -2167,11 +2195,10 @@ label{
         background-size: 130% auto;
         background-position: 50% 100%;
         font-size: 1.6rem;
-        padding-top:6%;
+        padding-top: 6%;
         overflow: hidden;
         text-align: center;
     }
-
 
     .meeting:hover {
         box-shadow: 0 0 0 #ababab;
@@ -2180,17 +2207,13 @@ label{
 
     }
 
-
     /*--------------------------------------blog-----------------------------------*/
-
-
     .blog-strip {
         /*z-index: 10;*/
         position: static;
-        height:549vw;
+        height: 549vw;
 
     }
-
 
     .blog-strip .blog-title h2 {
         font-size: 4rem;
@@ -2215,18 +2238,18 @@ label{
         width: 100%;
         display: block;
         float: none;
-        margin-bottom:10%;
+        margin-bottom: 10%;
 
     }
+
     .blog-strip li:nth-child(1n +2) {
         height: 90vw;
         width: 100%;
         display: block;
         float: none;
-        margin-bottom:5%;
+        margin-bottom: 5%;
 
     }
-
 
     .blog-strip li span:nth-of-type(1) {
         position: initial;
@@ -2243,7 +2266,7 @@ label{
 
         position: absolute;
         padding-bottom: 20%;
-        bottom:0;
+        bottom: 0;
     }
 
     .blog-strip li a:hover span:nth-of-type(2) {
@@ -2252,13 +2275,10 @@ label{
 
     }
 
-/*---------------------------------------------foote menus----------------------------------------------*/
-
-
+    /*---------------------------------------------foote menus----------------------------------------------*/
     /*!*!*----------------------------------------------footer------------------------------------------------------*!*!*/
-
     .footer-a-background {
-        height:15vh;
+        height: 15vh;
     }
 
     .footer-a-background > a:last-child {
@@ -2267,14 +2287,15 @@ label{
 
         /*margin-top: 40px;*/
     }
+
     .menu-footer-font {
         margin-top: 0;
         padding-left: 0;
     }
 
     .menu-footer-font > li {
-        height:30px;
-        margin-left:10px;
+        height: 30px;
+        margin-left: 10px;
     }
 
     .menu-footer-font > li ul {
@@ -2282,15 +2303,16 @@ label{
     }
 
     .menu-footer-font > li,
-    .menu-footer-font > li ul > li{
+    .menu-footer-font > li ul > li {
         height: 20px;
 
         text-align: center;
 
         /*padding-top: 10px;*/
     }
+
     .menu-footer-font > li > a,
-    .menu-footer-font > li ul > li a{
+    .menu-footer-font > li ul > li a {
         font-size: .7rem;
         padding-top: 0;
 
@@ -2298,46 +2320,44 @@ label{
 
     }
 
-
-
-
-
-
     .footer-b-background {
         position: relative;
     }
-    .social-media.buttom-links{
+
+    .social-media.buttom-links {
         position: absolute;
-        top:6px;
+        top: 6px;
         left: 0;
     }
-    .social-media.buttom-links li a {
-        font-size: .5rem ;
 
+    .social-media.buttom-links li a {
+        font-size: .5rem;
 
     }
-    .footer-b-background p:last-child{
+
+    .footer-b-background p:last-child {
         font-size: .6rem;
         position: absolute;
-        bottom:7px;
-        left: 7%;
+        bottom: 9px;
+        left: 10%;
 
     }
+
     .footer-b-background p:last-child > a {
         font-size: .6rem;
         /*position: absolute;*/
         /*bottom:0;*/
         /*left: 140px;*/
-        border: 1px solid red;
+
     }
 
-    .buisness-links{
+    .buisness-links {
         position: absolute;
         bottom: -10px;
         left: 0;
 
-
     }
+
     .buisness-links a {
         display: inline-block;
         font-size: .6rem;
@@ -2353,56 +2373,31 @@ label{
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /*.social-media.buttom-links li a {*/
-        /*font-size: .5rem ;*/
-        /*border: 1px solid red;*/
+    /*font-size: .5rem ;*/
+    /*border: 1px solid red;*/
     /*}*/
     /*.footer-b-background p:last-child,*/
     /*.footer-b-background p:last-child a {*/
-        /*font-size: .1rem;*/
-
+    /*font-size: .1rem;*/
     /*}*/
-
     /*.buisness-links a {*/
-        /*display: inline-block;*/
-        /*font-size: .6rem;*/
+    /*display: inline-block;*/
+    /*font-size: .6rem;*/
     /*}*/
-
     /*small {*/
-        /*font-size: .8rem;*/
-        /*margin-top: 5px;*/
+    /*font-size: .8rem;*/
+    /*margin-top: 5px;*/
     /*}*/
     /*.menu-footer-font > li,*/
     /*.menu-footer-font > li ul > li{*/
-        /*height: 20px;*/
+    /*height: 20px;*/
     /*}*/
     /*.menu-footer-font > li > a,*/
     /*.menu-footer-font > li ul > li a{*/
-        /*font-size: .7rem;*/
-
+    /*font-size: .7rem;*/
     /*}*/
 }
-
 
 /*footer manu temp*/
 
