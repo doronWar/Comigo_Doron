@@ -447,7 +447,7 @@ nav > a > img {
 .white-strip.content {
 
     background-color: #fff;
-    background-image: url(../assets/other/screen_whos_on.jpg);
+    background-image: url("../assets/other/screen_whos_on.jpg");
     background-repeat: no-repeat;
     background-size: 60% auto;
     background-position: 115% 60%;
@@ -559,7 +559,7 @@ nav > a > img {
 .demo {
     float: right;
     display: inline-block;
-    background-image: url(../assets/other/screen_demo.jpg);
+    background-image: url("../assets/other/screen_demo.jpg");
     background-repeat: no-repeat;
     background-size: 90% auto;
     background-position: 100% 100%;
@@ -632,15 +632,14 @@ nav > a > img {
     height: 22.8vw;
     width: 35%;
     background-color: #e8e8e8;
-    background-image: url(../assets/other/img-event-IBC.jpg);
+    background-image: url("../assets/other/img-event-IBC.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     float: right;
     font-size: 1.7vw; /*1.5em*/
     /*box-shadow: 0 0 0 black;*/
     transform: scale(1);
-    transition-property: box-shadow,
-    transform: scale;
+    transition-property: box-shadow, transform;
     transition-duration: .3s;
 }
 
@@ -832,25 +831,25 @@ nav > a > img {
 }
 
 .blog-strip li:nth-of-type(2) {
-    background: url(../assets/blog/ibc_post_EI-750x508.png);
+    background: url("../assets/blog/ibc_post_EI-750x508.png");
 }
 
 /* one way to get screen darker: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),*/
 
 .blog-strip li:nth-of-type(3) {
-    background-image: url(../assets/blog/IMG_9294-750x563.jpeg);
+    background-image: url("../assets/blog/IMG_9294-750x563.jpeg");
 }
 
 .blog-strip li:nth-of-type(4) {
-    background-image: url(../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg);
+    background-image: url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
 }
 
 .blog-strip li:nth-of-type(5) {
-    background-image: url(../assets/blog/post_tv_connect-750x508.jpeg);
+    background-image: url("../assets/blog/post_tv_connect-750x508.jpeg");
 }
 
 .blog-strip li:nth-of-type(6) {
-    background-image: url(../assets/blog/post_quality-750x508.jpeg);
+    background-image: url("../assets/blog/post_quality-750x508.jpeg");
 }
 
 /*----------------------------footer menu-----------------------*/
@@ -2188,10 +2187,10 @@ label {
         /*position: absolute;*/
         top:25%;
         left: 2%;
-        /*border: 1px solid white;*/
+        border: 1px solid transparent;
         border-radius: 8vw;
-        width: 15vw;
-        height:15vw;
+        width: 0;
+        height:0;
     }
 
 
