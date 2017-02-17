@@ -259,7 +259,7 @@ nav > a > img {
 }
 
 .background-strip p {
-    color: #606060;;
+    color: #606060;
     font-size: 1rem;
     margin-bottom: 0;
 }
@@ -285,14 +285,14 @@ nav > a > img {
     /*background-color: rgba(0,0,0);*/
 }
 
-.more-info a {
-    font-size: 1.5rem;
-    display: inline-block;
-    width: 35%; /*500px*/
-    padding: 5px 5px;
-    /*border: 1px solid red;*/
+/*.more-info a {*/
+    /*font-size: 1.5rem;*/
+    /*display: inline-block;*/
+    /*width: 35%; !*500px*!*/
+    /*padding: 5px 5px;*/
+    /*!*border: 1px solid red;*!*/
 
-}
+/*}*/
 
 .background-strip figure {
     /*font-size:.9em;*/
@@ -354,22 +354,46 @@ nav > a > img {
     /*margin-right: 0;*/
 }
 
+
+
+
+input[name=figurSwitch] {
+    /*position: absolute;*/
+    /*top: -9999px;*/
+    /*left:-999px;*/
+    display: none;
+}
+input[name=figurSwitch] ~ label {
+    display: inline-block;
+    /*padding-bottom: 20px;*/
+    font-size: 1.5rem;
+    width: 35%; /*500px*/
+    padding: 5px 5px;
+    color: #606060;
+}
+
+input[name=figurSwitch] ~ label:hover  {
+    color: red;
+}
+input[name=figurSwitch]:checked ~ label {
+    color: red;
+}
 /*------------------------------------getting figure  & video to always disply-----------------------------------------*/
 
-.more-info li:nth-child(6) a ~ figure {
+.more-info li:nth-child(6) input[name=figurSwitch] ~ figure {
     display: inline-block;
     text-align: center;
 }
 
-.more-info li:nth-child(6) a ~ video {
+.more-info li:nth-child(6) input[name=figurSwitch] ~ video {
     display: initial;
 }
 
-.more-info li:nth-child(6) a ~ figure img {
+.more-info li:nth-child(6) input[name=figurSwitch] ~ figure img {
     width: 85%;
 }
 
-.more-info li:nth-child(6) a ~ figure figcaption {
+.more-info li:nth-child(6) input[name=figurSwitch] ~ figure figcaption {
     text-align: center;
     color: #fff;
     position: absolute;
@@ -1028,7 +1052,7 @@ h3 {
 /*----------------------------relative sizing------------------------------*/
 
 #menubutton,
-label {
+#menubutton ~ label {
     display: none;
 }
 
@@ -1191,7 +1215,7 @@ label {
         width: 18%;
     }
 
-    .more-info a {
+    .more-info input[name=figurSwitch] ~ label {
         font-size: 1rem;
     }
 
@@ -1211,7 +1235,7 @@ label {
         /*border: 1px solid red;*/
     }
 
-    .more-info a:hover ~ figure figcaption {
+    .more-info input[name=figurSwitch] ~ label:hover ~ figure figcaption {
         top: -70px;
     }
 
@@ -1238,7 +1262,11 @@ label {
         font-size: 2rem;
         padding-top: 50%;
     }
+    .blog-strip li a:hover span:nth-of-type(2) {
+        height: 15%;
+        transform: translateY(-75px);
 
+    }
     /*.blog-strip .blog-title {*/
     /*position: absolute;*/
     /*top: 67%;*/
@@ -1286,21 +1314,30 @@ label {
     /*top:40%;*/
     /*!*height:34%;*!*/
     /*}*/
-    .more-info a:hover ~ figure figcaption {
+    .background-strip div{
+        padding-top:15px;
+    }
+
+    .more-info{
+        margin-top:0;
+        padding-top:3%;
+    }
+    .more-info input[name=figurSwitch] ~ label:hover ~ figure figcaption {
         width: 150%;
         top: -80px;
         right: -50px;
         /*border: 1px solid red;*/
     }
 
-    .more-info li:nth-child(6) a ~ figure figcaption {
+    .more-info li:nth-child(6) input[name=figurSwitch] ~ label ~ figure figcaption {
         top: -80px;
         right: -50px;
         width: 150%;
         /*border: 1px solid red;*/
     }
 
-    .more-info a {
+
+    .more-info input[name=figurSwitch] ~ label {
         height: 100%;
         padding-bottom: 10px;
 
@@ -1358,7 +1395,10 @@ label {
 
     .blog-strip li a:hover span:nth-of-type(2) {
         font-size: .7rem;
+        transform: translateY(-70px);
     }
+
+
 
     /*!*!*----------------------------------------------footer------------------------------------------------------*!*!*/
     .social-media.buttom-links li a {
@@ -1406,7 +1446,7 @@ label {
         display: none;
     }
 
-    label {
+    #menubutton ~ label {
         display: inline-block;
         position: absolute;
         top: 50%;
@@ -1568,8 +1608,8 @@ label {
 
     }
 
-    .more-info a {
-        font-size: .7rem;
+    .more-info input[name=figurSwitch] ~ label  {
+        font-size: 1.2rem;
         display: inline-block;
         width: 100%; /*500px*/
     }
@@ -1795,6 +1835,21 @@ label {
         height: 52px;
         font-size: 1.7rem;
     }
+    .blog-strip li a:hover span:nth-of-type(2) {
+        height: 15%;
+        transform: translateY(-60px);
+
+    }
+
+
+    .blog-strip li:nth-of-type(1n+2):hover {
+        transform: scale(1);
+        z-index: 20;
+    }
+    .blog-strip li:nth-of-type(1n+2) > a:hover{
+        transform: scale(1);
+    }
+
 
     /*!*!*----------------------------------------------footer------------------------------------------------------*!*!*/
     .footer-a-background > a:last-child {
@@ -1898,7 +1953,7 @@ label {
         display: none;
     }
 
-    label {
+    #menubutton ~ label {
         display: inline-block;
         position: absolute;
         top: 50%;
@@ -2048,10 +2103,11 @@ label {
         padding-left: 10px;
     }
 
-    .more-info a {
+    .more-info input[name=figurSwitch] ~ label  {
         font-size: .7rem;
         display: inline-block;
         width: 100%; /*500px*/
+        color: #909090;
     }
 
     .background-strip video {
@@ -2307,8 +2363,13 @@ label {
         font-size: 1.7rem;
     }
 
-    .blog-strip li:nth-of-type(1n+2) > a:hover {
+    .blog-strip li:nth-of-type(1n+2) a:hover {
         transform: scale(1);
+    }
+
+    .blog-strip li:nth-of-type(1n+2):hover {
+        transform: scale(1);
+        z-index: 20;
     }
 
     .blog-strip li a span:nth-of-type(2) {
@@ -2450,11 +2511,112 @@ label {
 
 /*footer manu temp*/
 
-/*@media (max-width: 400px) {*/
-    /*#shape{*/
-        /*border: 1px so*/
+@media (max-width: 400px) {
+
+
+    .background-strip h2 {
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    .background-strip p {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .more-info input[name=figurSwitch] ~ label  {
+        font-size: .7rem;
+        display: inline-block;
+        width: 100%; /*500px*/
+        color: #909090;
+    }
+
+    .more-info input[name=figurSwitch]:checked ~ label  {
+        color: red;
+    }
+    /*.background-strip > div {*/
+        /*width: 100%;*/
+        /*float: none;*/
+        /*margin-left: 0;*/
     /*}*/
-/*}*/
+
+    /*.more-info {*/
+        /*position: static;*/
+        /*!*top:30%;*!*/
+        /*!*left:0;*!*/
+        /*display: block;*/
+        /*padding-top: 0;*/
+        /*width: 80%;*/
+        /*height: 17%;*/
+        /*margin: auto;*/
+
+    /*}*/
+
+    /*.more-info li {*/
+        /*float: left;*/
+        /*!*display: inline-block;*!*/
+        /*list-style-type: none;*/
+        /*padding-bottom: 20px;*/
+    /*}*/
+
+    /*.more-info li:nth-child(1) {*/
+        /*padding-left: 10px;*/
+    /*}*/
+
+
+
+    /*.background-strip video {*/
+        /*!*position: absolute;*!*/
+        /*top: 0;*/
+        /*left: 0;*/
+        /*!*height: 110%;*!*/
+        /*width: 245vw;*/
+
+    /*!*}*!*/
+
+    /*.background-strip figure {*/
+        /*top: 63%;*/
+        /*right: 0;*/
+        /*width: 100%;*/
+        /*padding-left: 30%;*/
+        /*padding-right: 30%;*/
+
+        /*!*top: 70%;*!*/
+        /*!*right: 10%;*!*/
+        /*!*padding-top:15%;*!*/
+    /*}*/
+
+    /*.more-info li:hover ~ figure img {*/
+        /*width: 60%;*/
+        /*padding-left: 60px;*/
+    /*}*/
+
+    /*.more-info li:hover ~ figure figcaption {*/
+        /*font-size: 1.1rem;*/
+        /*width: 80%; !*500px;*!*/
+
+    /*}*/
+
+
+/*--------------------------------------------------------blog------------------------------------*/
+
+    /*.blog-strip > ul > li:nth-child(1n+2) {*/
+        /*background-position: center center;*/
+        /*background-size: cover;*/
+        /*!*border: 1px solid black;*!*/
+        /*position: relative;*/
+        /*transition-property: transform;*/
+        /*transition-duration: .1s;*/
+        /*overflow: hidden;*/
+    /*}*/
+
+    .blog-strip li:nth-of-type(1n+2):hover {
+        transform: scale(1);
+
+    }
+
+}
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
