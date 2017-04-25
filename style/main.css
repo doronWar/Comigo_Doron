@@ -137,6 +137,7 @@ figcaption::first-letter {
 
 /*menu positioning*/
 
+
 body {
     padding-top: 66px;
 }
@@ -517,6 +518,7 @@ input[name=figurSwitch]:checked ~ label {
     position: absolute;
     top: -2%;
     display: block;
+    /*z-index: 10;*/
     /*bottom: 85%;*/
     right: .6%;
     /*left:80%;*/
@@ -1291,6 +1293,18 @@ h3 {
         right: .6%;
     }
 
+    /*--------------------------white strip resizing---------------------*/
+
+
+    .white-strip.content h5 {
+        padding-top: 50px;
+    }
+
+
+    .white-strip.content a {
+        padding: 17px 10px;
+    }
+
     /*--------------------------blog strip resizing---------------------*/
     .blog-strip .blog-title h2 {
         font-size: 2rem;
@@ -1357,6 +1371,18 @@ h3 {
 
 
 @media (min-width: 753px) and (max-width: 934px) {
+
+
+
+    .white-strip.content h5 {
+        font-size: 2rem;
+        padding-top: 50px;
+    }
+
+
+    .white-strip.content a {
+        padding: 12px 6px;
+    }
 
 
     .social-media.buttom-links li a {
@@ -1579,10 +1605,30 @@ h3 {
     #menubutton ~ label {
         display: inline-block;
         position: absolute;
-        top: 50%;
-        right: 10px;
+        top: 30%;
+        right: 50px;
+
     }
 
+    #menubutton ~ label:after{
+        content: '\e9bd';
+        font-family: 'icomoon';
+        speak: none;
+        color: black;
+        background-color: #efefef;
+        margin:0 auto;
+        font-size: 26px;
+    }
+
+    #menubutton:checked ~ label:after{
+        content: '\ea0f';
+        font-family: 'icomoon';
+        speak: none;
+        color: black;
+        background-color: #efefef;
+        margin:0 auto;
+        font-size: 26px;
+    }
     input:checked ~ .nav-top {
         position: static;
         position: absolute;
@@ -2074,11 +2120,28 @@ h3 {
         display: none;
     }
 
+    /*#menubutton ~ label {*/
+        /*display: inline-block;*/
+        /*position: absolute;*/
+        /*top: 50%;*/
+        /*right: 20px;*/
+    /*}*/
     #menubutton ~ label {
         display: inline-block;
         position: absolute;
-        top: 50%;
-        right: 20px;
+        top: 30%;
+        right: 50px;
+
+    }
+
+    #menubutton ~ label:after{
+        content: '\e9bd';
+        font-family: 'icomoon';
+        speak: none;
+        color: black;
+        background-color: #efefef;
+        margin:0 auto;
+        font-size: 26px;
     }
 
     input:checked ~ .nav-top {
